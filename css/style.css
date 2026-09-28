@@ -238,6 +238,14 @@ button {
   letter-spacing: 0.05em;
 }
 
+
+.cta-text-short {
+  display: none;
+}
+.cta-text-full {
+  display: inline;
+}
+
 .header-right {
   display: flex;
   align-items: center;
@@ -2171,60 +2179,87 @@ dialog::backdrop {
 }
 
 /* ==========================================================================
-   MOBILE CALIBRATION (GALAXY S23 PLUS & PANTALLAS 390px - 430px)
+   MOBILE CALIBRATION & ERGONOMICS (GALAXY S23 PLUS & SMARTPHONES 390px - 430px)
    ========================================================================== */
 @media (max-width: 600px) {
   body {
-    padding: 8px 6px;
+    padding: 6px 4px;
   }
 
   .page-container {
-    padding: 14px 12px;
-    gap: 18px;
-    border-radius: 20px;
+    padding: 12px 10px;
+    gap: 16px;
+    border-radius: 18px;
   }
 
+  /* 1. Header Compacto & Ergonómico */
   .site-header {
-    padding: 8px 12px;
-    top: 8px;
+    padding: 6px 10px;
+    top: 6px;
+    gap: 8px;
+  }
+
+  .menu-toggle-btn {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+    min-height: 42px;
+    border-radius: var(--radius-pill);
+    flex-shrink: 0;
+  }
+
+  .brand-center-logo {
+    gap: 8px;
+    min-width: 0;
   }
 
   .brand-icon-wrapper {
     width: 32px;
     height: 32px;
+    flex-shrink: 0;
+  }
+
+  .brand-text-lockup {
+    min-width: 0;
   }
 
   .brand-title-main {
-    font-size: 0.98rem;
-  }
-
-  .brand-subtitle-badge {
-    font-size: 0.62rem;
-    max-width: 100px;
+    font-size: clamp(0.85rem, 3.2vw, 0.98rem);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 
-  .btn-pill-dark {
-    padding: 9px 14px;
-    font-size: 0.82rem;
+  .brand-subtitle-badge {
+    font-size: clamp(0.58rem, 1.8vw, 0.65rem);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 140px;
   }
 
-  .menu-toggle-btn {
+  .cta-text-short {
+    display: inline;
+  }
+  .cta-text-full {
+    display: none;
+  }
+
+  .header-right .btn-pill-dark {
     padding: 8px 12px;
-    font-size: 0.82rem;
+    font-size: 0.8rem;
     min-height: 42px;
+    flex-shrink: 0;
   }
 
+  /* 2. Hero Section */
   .hero-main-banner-card {
-    padding: 22px 16px;
+    padding: 20px 14px;
     border-radius: 18px;
-    gap: 16px;
+    gap: 14px;
   }
 
   .hero-description-text {
-    font-size: 0.92rem;
+    font-size: clamp(0.86rem, 2.4vw, 0.94rem);
     line-height: 1.5;
   }
 
@@ -2244,53 +2279,70 @@ dialog::backdrop {
 
   .hero-mini-cards-row {
     grid-template-columns: 1fr;
-    gap: 12px;
+    gap: 10px;
   }
 
   .mini-card-experience {
-    height: 190px;
+    height: 180px;
     border-radius: 16px;
   }
 
   .mini-card-testimonial {
-    padding: 16px;
+    padding: 14px;
     border-radius: 16px;
-    gap: 12px;
+    gap: 10px;
   }
 
+  /* 3. Hero Main Photo Card con encuadre óptimo de la Doctora y Gorros */
   .hero-main-photo-card {
-    min-height: 360px;
-    max-height: 430px;
+    min-height: 400px;
+    max-height: 470px;
     border-radius: 18px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-main-photo-card img {
+    object-position: center 8%; /* Rostro sonriente y colección de gorros visibles */
   }
 
   .floating-photo-pill {
-    top: 12px;
-    left: 12px;
-    padding: 6px 12px;
-    font-size: 0.72rem;
+    top: 10px;
+    left: 10px;
+    padding: 6px 10px;
+    font-size: 0.7rem;
   }
 
   .hero-action-cards-grid {
-    grid-template-columns: 1fr;
-    margin: 10px;
-    gap: 8px;
+    grid-template-columns: 1fr 1fr;
+    margin: 8px;
+    gap: 6px;
+    z-index: 2;
   }
 
   .hero-action-card-item {
-    padding: 12px 14px;
-    border-radius: 14px;
+    padding: 8px 10px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(10px);
   }
 
-  .hero-action-card-item h3 {
-    font-size: 0.96rem;
+  .hero-action-card-title {
+    font-size: 0.78rem;
+    font-weight: 700;
   }
 
   .hero-action-card-item p {
-    font-size: 0.78rem;
-    line-height: 1.35;
+    font-size: 0.64rem;
+    line-height: 1.25;
+    margin-top: 2px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
+  /* 4. Bento Sobre Mí */
   .about-bento-top-row,
   .about-bento-bottom-row {
     grid-template-columns: 1fr;
@@ -2298,39 +2350,39 @@ dialog::backdrop {
   }
 
   .pastel-bento-card {
-    padding: 18px 16px;
+    padding: 16px 14px;
     border-radius: 16px;
   }
 
-  .pastel-card-top-row h3 {
-    font-size: 1.15rem;
-  }
-
   .photo-card-middle {
-    min-height: 190px;
+    min-height: 180px;
     border-radius: 16px;
   }
 
   .dark-teal-section-wrapper {
-    padding: 24px 14px;
-    border-radius: 20px;
-    gap: 22px;
+    padding: 20px 12px;
+    border-radius: 18px;
+    gap: 18px;
   }
 
   .estilo-molar-feature-section {
-    padding: 24px 14px;
-    border-radius: 20px;
-    gap: 20px;
+    padding: 20px 12px;
+    border-radius: 18px;
+    gap: 16px;
   }
 
+  /* 5. Filtros de Categoría con Scroll Horizontal Táctil */
   .catalog-filter-tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
     overflow-x: auto;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
-    gap: 8px;
-    padding: 4px 2px 8px;
-    width: 100%;
+    padding: 6px 2px 10px;
+    margin: 0 -2px;
+    width: calc(100% + 4px);
   }
 
   .catalog-filter-tabs::-webkit-scrollbar {
@@ -2338,109 +2390,205 @@ dialog::backdrop {
   }
 
   .filter-tab-pill {
-    padding: 9px 16px;
-    font-size: 0.82rem;
+    padding: 9px 14px;
+    font-size: 0.8rem;
+    font-weight: 600;
     flex-shrink: 0;
-    min-height: 40px;
+    min-height: 42px;
+    border-radius: var(--radius-pill);
+    cursor: pointer;
   }
 
+  /* 6. Grid de Gorros Quirúrgicos en 2 Columnas E-Commerce (Galaxy S23 Plus) */
   .products-gorros-grid {
-    grid-template-columns: 1fr;
-    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 
   .product-gorro-card {
-    border-radius: 18px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: #FFFFFF;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
   }
 
   .product-image-container {
-    height: 220px;
-    padding: 14px;
+    height: 155px;
+    padding: 8px;
+    position: relative;
+    background-color: #F8FBFC;
+  }
+
+  .product-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .product-badge-corner {
+    top: 6px;
+    left: 6px;
+    font-size: 0.58rem;
+    padding: 3px 6px;
+    border-radius: 6px;
+    backdrop-filter: blur(4px);
   }
 
   .product-info-body {
-    padding: 16px;
-    gap: 12px;
+    padding: 8px 8px 10px;
+    gap: 6px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .product-title-row h3 {
-    font-size: 1.05rem;
+    font-size: clamp(0.8rem, 2.6vw, 0.9rem);
+    line-height: 1.25;
+    font-weight: 700;
+    color: var(--teal-darker);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 2.5em;
   }
 
   .product-title-row p {
-    font-size: 0.82rem;
-    line-height: 1.45;
+    font-size: 0.68rem;
+    line-height: 1.35;
+    color: var(--text-muted);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-top: 2px;
+  }
+
+  .product-price-action-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+    margin-top: auto;
+  }
+
+  .product-price-tag {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
   }
 
   .product-price-value {
-    font-size: 1.15rem;
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--teal-dark);
+  }
+
+  .product-price-note {
+    font-size: 0.6rem;
+    color: var(--text-muted);
   }
 
   .btn-whatsapp-order {
-    padding: 9px 14px;
-    font-size: 0.82rem;
-    min-height: 42px;
+    width: 100%;
+    justify-content: center;
+    padding: 9px 8px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    min-height: 44px; /* Ergonomía táctil para pulgares */
+    border-radius: 10px;
   }
 
+  /* 7. Banner de Descarga Oficial & Beneficios */
   .catalog-cta-banner-card {
-    padding: 20px 16px;
+    padding: 18px 14px;
     border-radius: 16px;
+    gap: 12px;
+  }
+
+  .catalog-cta-title {
+    font-size: clamp(1.05rem, 3.4vw, 1.2rem);
+    line-height: 1.3;
+  }
+
+  .catalog-cta-text {
+    font-size: 0.8rem;
+    line-height: 1.45;
   }
 
   .catalog-cta-actions {
     flex-direction: column;
     width: 100%;
+    gap: 10px;
   }
 
   .catalog-cta-actions a {
     width: 100%;
     justify-content: center;
     min-height: 46px;
+    font-size: 0.84rem;
   }
 
+  /* 8. Servicios Odontológicos en 2x2 Cómodo */
   .services-four-cards-grid {
-    grid-template-columns: 1fr;
-    gap: 14px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 
   .service-vertical-card {
-    height: 280px;
-    padding: 18px;
-    border-radius: 16px;
+    height: 195px;
+    padding: 12px;
+    border-radius: 14px;
   }
 
   .service-card-top-content h3 {
-    font-size: 1.15rem;
+    font-size: 0.9rem;
+    line-height: 1.2;
+  }
+
+  .service-card-number-tag {
+    font-size: 0.65rem;
+    padding: 2px 6px;
   }
 
   .service-card-bottom-content p {
-    font-size: 0.82rem;
+    font-size: 0.68rem;
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
+  /* 9. Especialistas */
   .experts-cards-grid {
     grid-template-columns: 1fr;
-    gap: 14px;
+    gap: 12px;
   }
 
   .doctor-expert-card {
-    height: 310px;
+    height: 280px;
     border-radius: 18px;
   }
 
   .doctor-overlay-card {
-    bottom: 10px;
-    left: 10px;
-    right: 10px;
-    padding: 12px 14px;
+    bottom: 8px;
+    left: 8px;
+    right: 8px;
+    padding: 10px 12px;
     border-radius: 12px;
   }
 
   .doctor-meta-text h3 {
-    font-size: 0.98rem;
+    font-size: 0.94rem;
   }
 
   .doctor-meta-text p {
-    font-size: 0.74rem;
+    font-size: 0.72rem;
   }
 
   .social-circle-pill {
@@ -2449,9 +2597,10 @@ dialog::backdrop {
     font-size: 0.9rem;
   }
 
+  /* 10. Formulario de Citas */
   .booking-form-card {
-    padding: 20px 14px;
-    border-radius: 18px;
+    padding: 18px 12px;
+    border-radius: 16px;
   }
 
   .form-control-input,
@@ -2460,42 +2609,61 @@ dialog::backdrop {
     font-size: 16px; /* Evita zoom automático en navegadores móviles */
     padding: 12px 14px;
     border-radius: 10px;
+    min-height: 46px;
   }
 
   .btn-submit-booking {
     padding: 14px;
-    font-size: 0.94rem;
+    font-size: 0.92rem;
     min-height: 48px;
     border-radius: var(--radius-pill);
   }
 
   .site-footer-card {
-    padding: 28px 16px;
-    border-radius: 20px;
+    padding: 24px 14px;
+    border-radius: 18px;
   }
 
   .footer-main-grid {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 20px;
   }
 
-  /* Modales totalmente ergonómicos para dedos y pulgares */
+  /* 11. Modales Ergonómicos Accesibles para Dedos & Pulgares */
   dialog {
     width: calc(100vw - 20px);
     max-width: 420px;
-    max-height: 86vh;
+    max-height: 88vh;
     border-radius: 18px;
+    border: none;
+    padding: 0;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  }
+
+  dialog::backdrop {
+    background: rgba(14, 37, 45, 0.68);
+    backdrop-filter: blur(8px);
   }
 
   .modal-inner-card {
-    padding: 20px 16px;
-    gap: 14px;
+    padding: 18px 14px;
+    gap: 12px;
   }
 
   .modal-inner-card h3 {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
+  }
+
+  .modal-close-icon-btn {
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    border-radius: 50%;
   }
 
   .modal-actions-group {
@@ -2508,22 +2676,26 @@ dialog::backdrop {
   .modal-actions-group .btn-pill-white {
     width: 100%;
     justify-content: center;
-    min-height: 46px;
+    min-height: 48px;
+    font-size: 0.9rem;
   }
 
-  /* Menú Drawer Móvil */
+  /* 12. Menú Drawer Móvil */
   .mobile-nav-drawer {
     width: 290px;
-    padding: 22px 16px;
-    gap: 20px;
+    padding: 20px 14px;
+    gap: 18px;
   }
 
   .mobile-nav-links a {
-    font-size: 0.98rem;
+    font-size: 0.96rem;
     padding: 10px 0;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
   }
 
-  /* Botón Flotante WhatsApp optimizado para zona de pulgares */
+  /* 13. Botón Flotante WhatsApp optimizado con Safe Areas para Galaxy S23 Plus */
   .floating-whatsapp-trigger span.label-text {
     display: none;
   }
@@ -2533,34 +2705,39 @@ dialog::backdrop {
     border-radius: 50%;
     width: 52px;
     height: 52px;
-    bottom: 16px;
-    right: 16px;
+    min-width: 52px;
+    min-height: 52px;
+    bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+    right: calc(16px + env(safe-area-inset-right, 0px));
     justify-content: center;
     font-size: 1.45rem;
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+    z-index: 99;
   }
 }
 
-/* Calibración milimétrica para Galaxy S23 Plus (390px a 412px de ancho) */
+/* Micro-calibración para pantallas de 390px a 412px (Galaxy S23 Plus nativo) */
 @media (max-width: 412px) {
-  .hero-headline-title {
-    font-size: 1.68rem;
-    line-height: 1.15;
+  .page-container {
+    padding: 10px 8px;
+    gap: 14px;
+    border-radius: 16px;
   }
 
-  .section-main-title {
-    font-size: 1.35rem;
-    line-height: 1.2;
+  .hero-main-banner-card {
+    padding: 18px 12px;
   }
 
   .product-image-container {
-    height: 195px;
+    height: 140px;
   }
 
   .service-vertical-card {
-    height: 260px;
+    height: 180px;
+    padding: 10px;
   }
 
   .doctor-expert-card {
-    height: 290px;
+    height: 270px;
   }
 }

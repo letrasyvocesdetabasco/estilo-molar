@@ -196,6 +196,27 @@ _Enviado desde el sitio web oficial de Estilo Molar_`;
     });
   }
 
+  // Cierre ergonómico de modales al tocar el fondo (backdrop tap en móviles)
+  [bookingSuccessModal, procedureModal].forEach((modal) => {
+    if (modal) {
+      modal.addEventListener('click', (e) => {
+        const rect = modal.getBoundingClientRect();
+        const isInDialog = (
+          rect.top <= e.clientY &&
+          e.clientY <= rect.top + rect.height &&
+          rect.left <= e.clientX &&
+          e.clientX <= rect.left + rect.width
+        );
+        if (!isInDialog) {
+          modal.close();
+          if (modal === bookingSuccessModal && appointmentForm) {
+            appointmentForm.reset();
+          }
+        }
+      });
+    }
+  });
+
   /* ==========================================================================
      6. Botón Volver Arriba (Back To Top)
      ========================================================================== */

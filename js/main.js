@@ -57,14 +57,9 @@ document.addEventListener('DOMContentLoaded', () => {
       gorroCards.forEach((card) => {
         const cardCategory = card.getAttribute('data-category');
         if (filterCategory === 'all' || cardCategory === filterCategory) {
-          card.style.display = 'flex';
-          card.style.opacity = '0';
-          setTimeout(() => {
-            card.style.transition = 'opacity 0.4s ease';
-            card.style.opacity = '1';
-          }, 50);
+          card.classList.remove('card-hidden');
         } else {
-          card.style.display = 'none';
+          card.classList.add('card-hidden');
         }
       });
     });
@@ -96,6 +91,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const bookingSuccessModal = document.getElementById('bookingSuccessModal');
   const modalCloseBtn = document.getElementById('closeModalBtn');
   const modalWhatsappLink = document.getElementById('modalWhatsappConfirmLink');
+  const bookDateInput = document.getElementById('bookDate');
+
+  if (bookDateInput) {
+    const today = new Date().toISOString().split('T')[0];
+    bookDateInput.min = today;
+  }
 
   if (appointmentForm) {
     appointmentForm.addEventListener('submit', (e) => {
@@ -230,11 +231,15 @@ _Enviado desde el sitio web oficial de Estilo Molar_`;
   const carouselContainer = document.querySelector('.stories-cards-carousel');
 
   if (prevBtn && nextBtn && carouselContainer) {
+    const getScrollStep = () => {
+      const firstCard = carouselContainer.querySelector('.story-review-card');
+      return firstCard ? firstCard.offsetWidth + 20 : 320;
+    };
     nextBtn.addEventListener('click', () => {
-      carouselContainer.scrollBy({ left: 320, behavior: 'smooth' });
+      carouselContainer.scrollBy({ left: getScrollStep(), behavior: 'smooth' });
     });
     prevBtn.addEventListener('click', () => {
-      carouselContainer.scrollBy({ left: -320, behavior: 'smooth' });
+      carouselContainer.scrollBy({ left: -getScrollStep(), behavior: 'smooth' });
     });
   }
 });

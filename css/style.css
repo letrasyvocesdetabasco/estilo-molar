@@ -364,9 +364,23 @@ button {
 }
 
 .close-drawer-btn {
-  background: none;
-  font-size: 1.6rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #F0F6F8;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
   color: var(--text-dark);
+  border: none;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.close-drawer-btn:hover {
+  background: #E2EFF2;
+  color: var(--teal-dark);
 }
 
 /* ==========================================================================
@@ -469,11 +483,11 @@ button {
 }
 
 .hero-headline-title {
-  font-size: clamp(2.4rem, 4.5vw, 3.8rem);
+  font-size: clamp(1.75rem, 5.2vw, 3.6rem);
   font-weight: 800;
-  line-height: 1.08;
+  line-height: 1.12;
   color: var(--teal-dark);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.025em;
 }
 
 .hero-headline-title span {
@@ -768,9 +782,9 @@ button {
 }
 
 .section-main-title {
-  font-size: clamp(2rem, 3.8vw, 3rem);
+  font-size: clamp(1.4rem, 4.2vw, 2.6rem);
   font-weight: 800;
-  line-height: 1.12;
+  line-height: 1.18;
   letter-spacing: -0.02em;
 }
 
@@ -2019,83 +2033,534 @@ dialog::backdrop {
   flex-wrap: wrap;
 }
 
-/* Responsive Tweaks */
+/* ==========================================================================
+   MODAL EXTRA STYLES & ACCESSIBLE CONTROLS
+   ========================================================================== */
+.modal-close-icon-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #F0F6F8;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  border: none;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  flex-shrink: 0;
+}
+
+.modal-close-icon-btn:hover {
+  background: #E2EFF2;
+  color: var(--teal-dark);
+}
+
+.story-client-avatar-badge {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.95rem;
+  color: var(--teal-darker);
+  background: var(--pastel-cyan);
+  border: 2px solid #E6F0F2;
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   CATALOG DOWNLOAD & VALUE PROP BANNERS
+   ========================================================================== */
+.catalog-cta-banner-card {
+  background: linear-gradient(135deg, #E8F4F7 0%, #D4EBF0 100%);
+  border: 1px solid rgba(5, 75, 87, 0.12);
+  border-radius: var(--radius-card-md);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 8px;
+}
+
+@media (min-width: 860px) {
+  .catalog-cta-banner-card {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 34px;
+  }
+}
+
+.catalog-cta-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 650px;
+}
+
+.catalog-cta-title {
+  font-size: clamp(1.15rem, 2.8vw, 1.45rem);
+  font-weight: 800;
+  color: var(--teal-darker);
+}
+
+.catalog-cta-text {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.catalog-cta-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.catalog-extra-perks-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .catalog-extra-perks-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .catalog-extra-perks-row {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.catalog-perk-badge {
+  background: #FFFFFF;
+  border-radius: var(--radius-card-sm);
+  padding: 14px 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  border: 1px solid rgba(5, 75, 87, 0.06);
+  box-shadow: 0 4px 12px rgba(5, 75, 87, 0.04);
+}
+
+.catalog-perk-icon {
+  font-size: 1.4rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.catalog-perk-text h5 {
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: var(--teal-darker);
+  margin-bottom: 3px;
+}
+
+.catalog-perk-text p {
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  line-height: 1.35;
+}
+
+/* ==========================================================================
+   MOBILE CALIBRATION (GALAXY S23 PLUS & PANTALLAS 390px - 430px)
+   ========================================================================== */
 @media (max-width: 600px) {
   body {
-    padding: 12px 8px;
+    padding: 8px 6px;
   }
 
   .page-container {
-    padding: 16px 14px;
-    gap: 20px;
-    border-radius: 24px;
+    padding: 14px 12px;
+    gap: 18px;
+    border-radius: 20px;
   }
 
   .site-header {
-    padding: 10px 14px;
+    padding: 8px 12px;
+    top: 8px;
+  }
+
+  .brand-icon-wrapper {
+    width: 32px;
+    height: 32px;
   }
 
   .brand-title-main {
-    font-size: 1.02rem;
+    font-size: 0.98rem;
   }
 
   .brand-subtitle-badge {
-    font-size: 0.65rem;
-    max-width: 140px;
+    font-size: 0.62rem;
+    max-width: 100px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 
   .btn-pill-dark {
-    padding: 10px 16px;
-    font-size: 0.85rem;
+    padding: 9px 14px;
+    font-size: 0.82rem;
   }
 
   .menu-toggle-btn {
-    padding: 8px 14px;
-    font-size: 0.85rem;
+    padding: 8px 12px;
+    font-size: 0.82rem;
+    min-height: 42px;
   }
 
   .hero-main-banner-card {
-    padding: 28px 20px;
+    padding: 22px 16px;
+    border-radius: 18px;
+    gap: 16px;
+  }
+
+  .hero-description-text {
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+
+  .hero-action-buttons-row {
+    gap: 10px;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .hero-action-buttons-row a.btn-pill-dark,
+  .hero-action-buttons-row button.btn-video-watch {
+    width: 100%;
+    justify-content: center;
+    min-height: 46px;
+  }
+
+  .hero-mini-cards-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .mini-card-experience {
+    height: 190px;
+    border-radius: 16px;
+  }
+
+  .mini-card-testimonial {
+    padding: 16px;
+    border-radius: 16px;
+    gap: 12px;
   }
 
   .hero-main-photo-card {
-    min-height: 480px;
+    min-height: 360px;
+    max-height: 430px;
+    border-radius: 18px;
+  }
+
+  .floating-photo-pill {
+    top: 12px;
+    left: 12px;
+    padding: 6px 12px;
+    font-size: 0.72rem;
   }
 
   .hero-action-cards-grid {
     grid-template-columns: 1fr;
-    margin: 14px;
-    gap: 10px;
+    margin: 10px;
+    gap: 8px;
+  }
+
+  .hero-action-card-item {
+    padding: 12px 14px;
+    border-radius: 14px;
+  }
+
+  .hero-action-card-item h3 {
+    font-size: 0.96rem;
+  }
+
+  .hero-action-card-item p {
+    font-size: 0.78rem;
+    line-height: 1.35;
+  }
+
+  .about-bento-top-row,
+  .about-bento-bottom-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .pastel-bento-card {
+    padding: 18px 16px;
+    border-radius: 16px;
+  }
+
+  .pastel-card-top-row h3 {
+    font-size: 1.15rem;
+  }
+
+  .photo-card-middle {
+    min-height: 190px;
+    border-radius: 16px;
   }
 
   .dark-teal-section-wrapper {
-    padding: 32px 20px;
+    padding: 24px 14px;
+    border-radius: 20px;
+    gap: 22px;
   }
 
   .estilo-molar-feature-section {
-    padding: 32px 18px;
+    padding: 24px 14px;
+    border-radius: 20px;
+    gap: 20px;
+  }
+
+  .catalog-filter-tabs {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    gap: 8px;
+    padding: 4px 2px 8px;
+    width: 100%;
+  }
+
+  .catalog-filter-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-tab-pill {
+    padding: 9px 16px;
+    font-size: 0.82rem;
+    flex-shrink: 0;
+    min-height: 40px;
+  }
+
+  .products-gorros-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .product-gorro-card {
+    border-radius: 18px;
+  }
+
+  .product-image-container {
+    height: 220px;
+    padding: 14px;
+  }
+
+  .product-info-body {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .product-title-row h3 {
+    font-size: 1.05rem;
+  }
+
+  .product-title-row p {
+    font-size: 0.82rem;
+    line-height: 1.45;
+  }
+
+  .product-price-value {
+    font-size: 1.15rem;
+  }
+
+  .btn-whatsapp-order {
+    padding: 9px 14px;
+    font-size: 0.82rem;
+    min-height: 42px;
+  }
+
+  .catalog-cta-banner-card {
+    padding: 20px 16px;
+    border-radius: 16px;
+  }
+
+  .catalog-cta-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .catalog-cta-actions a {
+    width: 100%;
+    justify-content: center;
+    min-height: 46px;
+  }
+
+  .services-four-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .service-vertical-card {
+    height: 280px;
+    padding: 18px;
+    border-radius: 16px;
+  }
+
+  .service-card-top-content h3 {
+    font-size: 1.15rem;
+  }
+
+  .service-card-bottom-content p {
+    font-size: 0.82rem;
+  }
+
+  .experts-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .doctor-expert-card {
+    height: 310px;
+    border-radius: 18px;
+  }
+
+  .doctor-overlay-card {
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    padding: 12px 14px;
+    border-radius: 12px;
+  }
+
+  .doctor-meta-text h3 {
+    font-size: 0.98rem;
+  }
+
+  .doctor-meta-text p {
+    font-size: 0.74rem;
+  }
+
+  .social-circle-pill {
+    width: 40px;
+    height: 40px;
+    font-size: 0.9rem;
   }
 
   .booking-form-card {
-    padding: 24px 18px;
+    padding: 20px 14px;
+    border-radius: 18px;
+  }
+
+  .form-control-input,
+  .form-control-select,
+  .form-control-textarea {
+    font-size: 16px; /* Evita zoom automático en navegadores móviles */
+    padding: 12px 14px;
+    border-radius: 10px;
+  }
+
+  .btn-submit-booking {
+    padding: 14px;
+    font-size: 0.94rem;
+    min-height: 48px;
+    border-radius: var(--radius-pill);
   }
 
   .site-footer-card {
-    padding: 32px 20px;
+    padding: 28px 16px;
+    border-radius: 20px;
   }
 
+  .footer-main-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  /* Modales totalmente ergonómicos para dedos y pulgares */
+  dialog {
+    width: calc(100vw - 20px);
+    max-width: 420px;
+    max-height: 86vh;
+    border-radius: 18px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .modal-inner-card {
+    padding: 20px 16px;
+    gap: 14px;
+  }
+
+  .modal-inner-card h3 {
+    font-size: 1.15rem;
+  }
+
+  .modal-actions-group {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .modal-actions-group .btn-pill-dark,
+  .modal-actions-group .btn-pill-white {
+    width: 100%;
+    justify-content: center;
+    min-height: 46px;
+  }
+
+  /* Menú Drawer Móvil */
+  .mobile-nav-drawer {
+    width: 290px;
+    padding: 22px 16px;
+    gap: 20px;
+  }
+
+  .mobile-nav-links a {
+    font-size: 0.98rem;
+    padding: 10px 0;
+  }
+
+  /* Botón Flotante WhatsApp optimizado para zona de pulgares */
   .floating-whatsapp-trigger span.label-text {
     display: none;
   }
 
   .floating-whatsapp-trigger {
-    padding: 14px;
+    padding: 0;
     border-radius: 50%;
     width: 52px;
     height: 52px;
+    bottom: 16px;
+    right: 16px;
     justify-content: center;
+    font-size: 1.45rem;
+  }
+}
+
+/* Calibración milimétrica para Galaxy S23 Plus (390px a 412px de ancho) */
+@media (max-width: 412px) {
+  .hero-headline-title {
+    font-size: 1.68rem;
+    line-height: 1.15;
+  }
+
+  .section-main-title {
+    font-size: 1.35rem;
+    line-height: 1.2;
+  }
+
+  .product-image-container {
+    height: 195px;
+  }
+
+  .service-vertical-card {
+    height: 260px;
+  }
+
+  .doctor-expert-card {
+    height: 290px;
   }
 }

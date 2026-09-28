@@ -55,8 +55,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const filterCategory = tab.getAttribute('data-filter');
 
       gorroCards.forEach((card) => {
-        const cardCategory = card.getAttribute('data-category');
-        if (filterCategory === 'all' || cardCategory === filterCategory) {
+        const cardCategory = card.getAttribute('data-category') || '';
+        const categories = cardCategory.split(/\s+/);
+        if (filterCategory === 'all' || categories.includes(filterCategory)) {
           card.classList.remove('card-hidden');
         } else {
           card.classList.add('card-hidden');
@@ -74,9 +75,9 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', (e) => {
       const card = e.target.closest('.product-gorro-card');
       const title = card ? card.querySelector('.product-title-row h3')?.innerText : 'Gorro Quirúrgico';
-      const price = card ? card.querySelector('.product-price-value')?.innerText : '$180 MXN';
+      const price = card ? card.querySelector('.product-price-value')?.innerText : '$150 MXN';
 
-      const message = `👋 ¡Hola Dra.! Me interesa adquirir el gorro quirúrgico *${title}* (${price}) de la colección Estilo Molar en Villahermosa. ¿Tienes disponible para entrega o envío?`;
+      const message = `👋 ¡Hola Dra. Dariana! Me interesa adquirir el gorro quirúrgico modelo *${title}* (${price}) del catálogo oficial de Estilo Molar en Villahermosa. ¿Tienes disponible para entrega o envío?`;
       const encodedMsg = encodeURIComponent(message);
       const whatsappUrl = `https://wa.me/${CLINIC_WHATSAPP}?text=${encodedMsg}`;
 

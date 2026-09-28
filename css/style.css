@@ -1,0 +1,1963 @@
+/* ==========================================================================
+   ESTILO MOLAR | ODONTOLOGÍA INTEGRAL & GORROS QUIRÚRGICOS
+   Diseño de Alta Fidelidad - Villahermosa, Tabasco
+   ========================================================================== */
+
+:root {
+  /* Paleta cromática exacta del diseño LuxeSmile */
+  --canvas-bg: #D9E7EC;
+  --page-bg: #FFFFFF;
+  --teal-dark: #054B57;
+  --teal-dark-hover: #075867;
+  --teal-darker: #03363F;
+  --teal-hero-card: #EBF4F6;
+  --teal-accent-blue: #0E6D81;
+  
+  --text-dark: #0E252D;
+  --text-muted: #5B747D;
+  --text-light-muted: #8AA4AD;
+  --text-white: #FFFFFF;
+  --text-white-sub: #C8E3E8;
+
+  /* Pasteles temáticos Bento */
+  --pastel-lime: #EBF59F;
+  --pastel-peach: #FEDEAF;
+  --pastel-pink: #FCD5EC;
+  --pastel-cyan: #D2EFF5;
+
+  --btn-black: #0E1D22;
+  --btn-black-hover: #1A343D;
+  --btn-white: #FFFFFF;
+  --btn-white-hover: #F2F8F9;
+  
+  --whatsapp-green: #25D366;
+  --whatsapp-hover: #1EBE5D;
+  --gold-star: #FFB703;
+
+  /* Bordes y Radio */
+  --radius-canvas: 36px;
+  --radius-card-lg: 28px;
+  --radius-card-md: 20px;
+  --radius-card-sm: 14px;
+  --radius-pill: 999px;
+
+  /* Sombras elegantes */
+  --shadow-canvas: 0 30px 80px rgba(5, 54, 64, 0.12);
+  --shadow-card: 0 10px 30px rgba(5, 54, 64, 0.06);
+  --shadow-card-hover: 0 18px 45px rgba(5, 54, 64, 0.12);
+  --shadow-btn: 0 8px 20px rgba(14, 29, 34, 0.15);
+
+  --font-main: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --transition-smooth: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ==========================================================================
+   RESET & BASE STYLES
+   ========================================================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-main);
+  background-color: var(--canvas-bg);
+  color: var(--text-dark);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+  padding: 30px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-smooth);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  transition: var(--transition-smooth);
+}
+
+/* ==========================================================================
+   PAGE WRAPPER (CALCA DEL LIENZO PRINCIPAL)
+   ========================================================================== */
+.page-container {
+  width: 100%;
+  max-width: 1380px;
+  background-color: var(--page-bg);
+  border-radius: var(--radius-canvas);
+  box-shadow: var(--shadow-canvas);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 28px;
+}
+
+/* ==========================================================================
+   HEADER / NAVBAR
+   ========================================================================== */
+.site-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 18px;
+  background-color: var(--teal-hero-card);
+  border-radius: var(--radius-pill);
+  position: sticky;
+  top: 16px;
+  z-index: 100;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.menu-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  background-color: #FFFFFF;
+  border-radius: var(--radius-pill);
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--text-dark);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.menu-toggle-btn:hover {
+  background-color: #F0F6F8;
+}
+
+.menu-icon-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 18px;
+}
+
+.menu-icon-bars span {
+  display: block;
+  height: 2px;
+  background-color: var(--text-dark);
+  border-radius: 2px;
+  transition: var(--transition-smooth);
+}
+
+/* Nav Links Desktop */
+.nav-desktop-links {
+  display: none;
+  align-items: center;
+  gap: 22px;
+  margin-left: 10px;
+}
+
+@media (min-width: 1080px) {
+  .nav-desktop-links {
+    display: flex;
+  }
+}
+
+.nav-desktop-links a {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.nav-desktop-links a:hover,
+.nav-desktop-links a.active {
+  color: var(--teal-dark);
+}
+
+.brand-center-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-icon-wrapper {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.brand-icon-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.brand-text-lockup {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.brand-title-main {
+  font-size: 1.15rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--teal-dark);
+  letter-spacing: -0.02em;
+}
+
+.brand-subtitle-badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn-pill-dark {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  background-color: var(--btn-black);
+  color: #FFFFFF;
+  border-radius: var(--radius-pill);
+  font-size: 0.92rem;
+  font-weight: 700;
+  box-shadow: var(--shadow-btn);
+}
+
+.btn-pill-dark:hover {
+  background-color: var(--btn-black-hover);
+  transform: translateY(-1px);
+}
+
+.btn-pill-dark .arrow-icon-circle {
+  width: 22px;
+  height: 22px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+}
+
+.btn-pill-white {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  background-color: #FFFFFF;
+  color: var(--text-dark);
+  border-radius: var(--radius-pill);
+  font-size: 0.92rem;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.btn-pill-white:hover {
+  background-color: #F8FAFB;
+  transform: translateY(-1px);
+}
+
+.btn-pill-white .arrow-icon-circle {
+  width: 22px;
+  height: 22px;
+  background: var(--text-dark);
+  color: #FFFFFF;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+}
+
+/* ==========================================================================
+   MOBILE MENU DRAWER
+   ========================================================================== */
+.mobile-nav-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 25, 31, 0.6);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  justify-content: flex-end;
+}
+
+.mobile-nav-overlay.active {
+  display: flex;
+}
+
+.mobile-nav-drawer {
+  width: 320px;
+  max-width: 85vw;
+  height: 100%;
+  background: #FFFFFF;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  box-shadow: -10px 0 30px rgba(0,0,0,0.15);
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+.mobile-drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #E6EFF2;
+}
+
+.mobile-nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.mobile-nav-links a {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  padding: 8px 0;
+}
+
+.mobile-nav-links a:hover {
+  color: var(--teal-dark);
+}
+
+.close-drawer-btn {
+  background: none;
+  font-size: 1.6rem;
+  color: var(--text-dark);
+}
+
+/* ==========================================================================
+   PILL BADGES DE SECCIÓN
+   ========================================================================== */
+.section-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--teal-accent-blue);
+  background: rgba(14, 109, 129, 0.08);
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+}
+
+.section-badge-pill.on-dark {
+  color: #A4E2EE;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* ==========================================================================
+   HERO BENTO SECTION (CALCA EXACTA)
+   ========================================================================== */
+.hero-bento-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 960px) {
+  .hero-bento-grid {
+    grid-template-columns: 1.15fr 0.85fr;
+  }
+}
+
+/* Left Hero Column */
+.hero-left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-main-banner-card {
+  background-color: var(--teal-hero-card);
+  border-radius: var(--radius-card-lg);
+  padding: 42px 38px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-rating-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.hero-avatars-cluster {
+  display: flex;
+  align-items: center;
+}
+
+.avatar-circle {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 2px solid #FFFFFF;
+  margin-left: -8px;
+  object-fit: cover;
+  background-color: #BEE3EB;
+}
+
+.avatar-circle:first-child {
+  margin-left: 0;
+}
+
+.rating-stars-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.stars-row {
+  display: flex;
+  gap: 2px;
+  color: var(--gold-star);
+  font-size: 0.95rem;
+}
+
+.rating-count-text {
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.hero-headline-title {
+  font-size: clamp(2.4rem, 4.5vw, 3.8rem);
+  font-weight: 800;
+  line-height: 1.08;
+  color: var(--teal-dark);
+  letter-spacing: -0.03em;
+}
+
+.hero-headline-title span {
+  color: var(--text-dark);
+}
+
+.hero-description-text {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  max-width: 540px;
+  line-height: 1.6;
+}
+
+.hero-action-buttons-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.btn-video-watch {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: transparent;
+  color: var(--teal-dark);
+  font-weight: 700;
+  font-size: 0.94rem;
+  padding: 10px 14px;
+  border-radius: var(--radius-pill);
+}
+
+.btn-video-watch:hover {
+  background-color: rgba(5, 75, 87, 0.05);
+}
+
+.btn-video-watch .play-icon-circle {
+  width: 42px;
+  height: 42px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--teal-dark);
+  box-shadow: 0 4px 12px rgba(5, 75, 87, 0.12);
+  font-size: 0.9rem;
+}
+
+/* Mini Cards Row under Hero left */
+.hero-mini-cards-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 600px) {
+  .hero-mini-cards-row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.mini-card-experience {
+  position: relative;
+  height: 240px;
+  border-radius: var(--radius-card-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+
+.mini-card-experience img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.mini-card-experience:hover img {
+  transform: scale(1.04);
+}
+
+.mini-badge-overlay {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+  background: rgba(14, 109, 129, 0.92);
+  backdrop-filter: blur(8px);
+  color: #FFFFFF;
+  padding: 14px 16px;
+  border-radius: var(--radius-card-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.mini-badge-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.mini-badge-sub {
+  font-size: 0.78rem;
+  color: #D3EEF3;
+  line-height: 1.3;
+}
+
+.mini-card-testimonial {
+  background-color: var(--teal-hero-card);
+  border-radius: var(--radius-card-md);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  position: relative;
+}
+
+.testimonial-author-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.testimonial-author-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #FFFFFF;
+}
+
+.testimonial-author-info h4 {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--text-dark);
+}
+
+.testimonial-author-info p {
+  font-size: 0.76rem;
+  color: var(--text-muted);
+}
+
+.testimonial-bubble-text {
+  font-size: 0.88rem;
+  color: var(--text-dark);
+  font-style: italic;
+  line-height: 1.45;
+  background: #FFFFFF;
+  padding: 14px;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+/* Right Hero Column */
+.hero-right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.hero-main-photo-card {
+  position: relative;
+  height: 490px;
+  border-radius: var(--radius-card-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  background-color: #E2EFF2;
+}
+
+.hero-main-photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.6s ease;
+}
+
+.hero-main-photo-card:hover img {
+  transform: scale(1.03);
+}
+
+.floating-photo-pill {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--teal-dark);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.hero-action-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.hero-action-card-item {
+  background-color: var(--teal-hero-card);
+  padding: 20px;
+  border-radius: var(--radius-card-md);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  transition: var(--transition-smooth);
+}
+
+.hero-action-card-item:hover {
+  background-color: #E1EFF3;
+  transform: translateY(-2px);
+}
+
+.hero-action-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-action-card-title {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--teal-dark);
+}
+
+.hero-action-card-item p {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   ABOUT US SECTION (CONTENEDOR AZUL TEAL OSCURO)
+   ========================================================================== */
+.dark-teal-section-wrapper {
+  background-color: var(--teal-dark);
+  border-radius: var(--radius-card-lg);
+  padding: 48px 40px;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-header-row {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media (min-width: 860px) {
+  .section-header-row {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+}
+
+.section-header-left {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 640px;
+}
+
+.section-main-title {
+  font-size: clamp(2rem, 3.8vw, 3rem);
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+}
+
+.section-main-title.light-text {
+  color: #FFFFFF;
+}
+
+.section-subtext {
+  font-size: 1rem;
+  color: var(--text-white-sub);
+  line-height: 1.55;
+}
+
+/* Bento Cards Inside About */
+.about-bento-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 900px) {
+  .about-bento-grid {
+    grid-template-columns: 1.1fr 1.3fr;
+  }
+}
+
+.about-big-photo-card {
+  position: relative;
+  min-height: 380px;
+  border-radius: var(--radius-card-md);
+  overflow: hidden;
+  background: radial-gradient(circle at center, #0F788D 0%, #054B57 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-big-photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.about-big-photo-card:hover img {
+  transform: scale(1.03);
+}
+
+.about-bento-right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pastel-bento-card {
+  border-radius: var(--radius-card-md);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  color: var(--text-dark);
+  transition: var(--transition-smooth);
+}
+
+.pastel-bento-card:hover {
+  transform: translateY(-3px);
+}
+
+.pastel-bento-card.lime {
+  background-color: var(--pastel-lime);
+}
+
+.pastel-bento-card.peach {
+  background-color: var(--pastel-peach);
+}
+
+.pastel-bento-card.pink {
+  background-color: var(--pastel-pink);
+}
+
+.pastel-card-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pastel-card-top-row h3 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--teal-darker);
+}
+
+.pastel-card-plus-icon {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: var(--teal-darker);
+}
+
+.pastel-bento-card p {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: rgba(14, 37, 45, 0.85);
+}
+
+.about-tri-cards-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .about-tri-cards-row {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.photo-card-middle {
+  border-radius: var(--radius-card-md);
+  overflow: hidden;
+  height: 220px;
+  box-shadow: var(--shadow-card);
+}
+
+.photo-card-middle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ==========================================================================
+   EXCLUSIVE ESTILO MOLAR SHOWCASE SECTION (CALCA CON IMÁGENES DE GORROS)
+   ========================================================================== */
+.estilo-molar-feature-section {
+  background: linear-gradient(135deg, #F4F9FB 0%, #E6F3F7 100%);
+  border-radius: var(--radius-card-lg);
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  border: 1px solid #D2E6EC;
+}
+
+.estilo-molar-brand-banner {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+@media (min-width: 860px) {
+  .estilo-molar-brand-banner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.brand-showcase-title-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.brand-showcase-logo {
+  height: 64px;
+  width: auto;
+  object-fit: contain;
+}
+
+.catalog-filter-tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filter-tab-pill {
+  padding: 8px 18px;
+  background: #FFFFFF;
+  border-radius: var(--radius-pill);
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.filter-tab-pill.active,
+.filter-tab-pill:hover {
+  background: var(--teal-dark);
+  color: #FFFFFF;
+}
+
+/* Product Cards Grid */
+.products-gorros-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .products-gorros-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.product-gorro-card {
+  background: #FFFFFF;
+  border-radius: var(--radius-card-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition-smooth);
+  border: 1px solid rgba(5, 75, 87, 0.06);
+}
+
+.product-gorro-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.product-image-container {
+  position: relative;
+  height: 290px;
+  background-color: #F8FBFB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 16px;
+}
+
+.product-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+
+.product-gorro-card:hover .product-image-container img {
+  transform: scale(1.06);
+}
+
+.product-badge-corner {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(14, 37, 45, 0.85);
+  backdrop-filter: blur(6px);
+  color: #FFFFFF;
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 5px 12px;
+  border-radius: var(--radius-pill);
+}
+
+.product-info-body {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  gap: 16px;
+}
+
+.product-title-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.product-title-row h3 {
+  font-size: 1.12rem;
+  font-weight: 800;
+  color: var(--teal-darker);
+}
+
+.product-title-row p {
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+.product-price-action-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 14px;
+  border-top: 1px solid #EDF4F6;
+}
+
+.product-price-tag {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-price-value {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--teal-dark);
+}
+
+.product-price-note {
+  font-size: 0.7rem;
+  color: var(--text-light-muted);
+}
+
+.btn-whatsapp-order {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--whatsapp-green);
+  color: #FFFFFF;
+  padding: 10px 18px;
+  border-radius: var(--radius-pill);
+  font-size: 0.85rem;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.25);
+}
+
+.btn-whatsapp-order:hover {
+  background-color: var(--whatsapp-hover);
+  transform: translateY(-2px);
+}
+
+/* Gorros Value Props Bento Banner */
+.gorros-props-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .gorros-props-row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.prop-pill-card {
+  background: #FFFFFF;
+  padding: 18px 22px;
+  border-radius: var(--radius-card-sm);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  box-shadow: var(--shadow-card);
+}
+
+.prop-icon-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--teal-hero-card);
+  color: var(--teal-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.prop-text-group h4 {
+  font-size: 0.94rem;
+  font-weight: 800;
+  color: var(--text-dark);
+}
+
+.prop-text-group p {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+/* ==========================================================================
+   SERVICES SECTION (4 VERTICAL CARDS - CALCA EXACTA)
+   ========================================================================== */
+.services-section-wrapper {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.services-four-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 640px) {
+  .services-four-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1040px) {
+  .services-four-cards-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.service-vertical-card {
+  position: relative;
+  height: 440px;
+  border-radius: var(--radius-card-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  transition: var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.service-vertical-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.service-card-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+  z-index: 1;
+}
+
+.service-vertical-card:hover .service-card-bg-img {
+  transform: scale(1.05);
+}
+
+.service-card-gradient-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(5, 36, 44, 0.88) 0%, rgba(5, 36, 44, 0.15) 32%, rgba(5, 36, 44, 0.2) 65%, rgba(5, 36, 44, 0.94) 100%);
+  z-index: 2;
+}
+
+.service-card-top-content {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: #FFFFFF;
+}
+
+.service-card-top-content h3 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  line-height: 1.15;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.service-card-number-tag {
+  font-size: 0.85rem;
+  font-weight: 800;
+  opacity: 0.85;
+}
+
+.service-card-bottom-content {
+  position: relative;
+  z-index: 3;
+  color: #FFFFFF;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.service-card-bottom-content p {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  max-width: 82%;
+}
+
+.service-card-arrow-circle {
+  width: 32px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(6px);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   PATIENT STORIES / TESTIMONIALS & VIDEO (CONTENEDOR OSCURO)
+   ========================================================================== */
+.stories-cards-carousel {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 860px) {
+  .stories-cards-carousel {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.story-review-card {
+  background: #FFFFFF;
+  border-radius: var(--radius-card-md);
+  padding: 26px;
+  color: var(--text-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 18px;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.story-quote-mark {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  font-size: 2.4rem;
+  font-family: serif;
+  color: #D3E5E9;
+  line-height: 1;
+}
+
+.story-client-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.story-client-avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #E6F0F2;
+}
+
+.story-client-meta h4 {
+  font-size: 0.96rem;
+  font-weight: 800;
+  color: var(--teal-darker);
+}
+
+.story-client-meta span {
+  font-size: 0.74rem;
+  color: var(--text-muted);
+}
+
+.story-quote-body {
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--text-dark);
+}
+
+.story-stars-row {
+  display: flex;
+  gap: 3px;
+  color: var(--gold-star);
+  font-size: 0.9rem;
+}
+
+/* Big Video Procedure Banner */
+.procedure-video-card {
+  position: relative;
+  height: 380px;
+  border-radius: var(--radius-card-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  cursor: pointer;
+}
+
+.procedure-video-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.procedure-video-card:hover img {
+  transform: scale(1.03);
+}
+
+.procedure-overlay-gradient {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(5, 75, 87, 0.25) 0%, rgba(5, 75, 87, 0.75) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: #FFFFFF;
+}
+
+.play-video-big-btn {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  color: var(--teal-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.procedure-video-card:hover .play-video-big-btn {
+  transform: scale(1.12);
+}
+
+.procedure-video-caption {
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+
+/* ==========================================================================
+   OUR EXPERTS / MEET THE DOCTOR SECTION
+   ========================================================================== */
+.experts-section-wrapper {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.experts-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 768px) {
+  .experts-cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.doctor-expert-card {
+  position: relative;
+  height: 420px;
+  border-radius: var(--radius-card-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  transition: var(--transition-smooth);
+}
+
+.doctor-expert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.doctor-expert-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.doctor-expert-card:hover img {
+  transform: scale(1.04);
+}
+
+.doctor-expert-card.featured-doctor {
+  border: 2px solid var(--teal-accent-blue);
+}
+
+.doctor-overlay-card {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  padding: 16px 18px;
+  border-radius: var(--radius-card-sm);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.doctor-meta-text h3 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--teal-darker);
+}
+
+.doctor-meta-text p {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.doctor-social-pills {
+  display: flex;
+  gap: 6px;
+}
+
+.social-circle-pill {
+  width: 28px;
+  height: 28px;
+  background: var(--teal-dark);
+  color: #FFFFFF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.74rem;
+}
+
+.social-circle-pill:hover {
+  background: var(--teal-accent-blue);
+}
+
+/* ==========================================================================
+   APPOINTMENT BOOKING SECTION (CONTENEDOR OSCURO CON FORMULARIO)
+   ========================================================================== */
+.booking-section-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+@media (min-width: 960px) {
+  .booking-section-grid {
+    grid-template-columns: 1.15fr 0.85fr;
+  }
+}
+
+.booking-form-card {
+  background: #FFFFFF;
+  border-radius: var(--radius-card-md);
+  padding: 34px;
+  box-shadow: var(--shadow-card);
+}
+
+.booking-inputs-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+@media (min-width: 600px) {
+  .booking-inputs-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form-group-full {
+  grid-column: 1 / -1;
+}
+
+.form-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-field-group label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.form-control-input,
+.form-control-select,
+.form-control-textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #D2E0E5;
+  border-radius: var(--radius-sm);
+  font-family: inherit;
+  font-size: 0.92rem;
+  color: var(--text-dark);
+  background-color: #F8FBFC;
+  transition: var(--transition-smooth);
+}
+
+.form-control-input:focus,
+.form-control-select:focus,
+.form-control-textarea:focus {
+  outline: none;
+  border-color: var(--teal-accent-blue);
+  background-color: #FFFFFF;
+  box-shadow: 0 0 0 3px rgba(14, 109, 129, 0.15);
+}
+
+.form-control-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.booking-side-photo-card {
+  position: relative;
+  min-height: 480px;
+  border-radius: var(--radius-card-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  background-color: #E2EFF2;
+}
+
+.booking-side-photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.booking-floating-contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.contact-pill-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+  padding: 14px 18px;
+  border-radius: var(--radius-card-sm);
+  color: #FFFFFF;
+}
+
+.contact-pill-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.contact-pill-text h4 {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #A4E2EE;
+}
+
+.contact-pill-text p {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+/* ==========================================================================
+   FAQ SECTION (PREGUNTAS FRECUENTES)
+   ========================================================================== */
+.faq-section-wrapper {
+  background-color: #F8FBFC;
+  border-radius: var(--radius-card-lg);
+  padding: 44px 38px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  border: 1px solid #E3EFF2;
+}
+
+.faq-accordion-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.faq-item {
+  background: #FFFFFF;
+  border-radius: var(--radius-card-sm);
+  border: 1px solid #E1EDF0;
+  overflow: hidden;
+  transition: var(--transition-smooth);
+}
+
+.faq-item summary {
+  padding: 18px 22px;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--teal-darker);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: '+';
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--teal-accent-blue);
+  transition: transform 0.3s ease;
+}
+
+.faq-item[open] summary::after {
+  content: '−';
+}
+
+.faq-content-box {
+  padding: 0 22px 20px 22px;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   FOOTER (CALCA EXACTA)
+   ========================================================================== */
+.site-footer-card {
+  background-color: var(--teal-hero-card);
+  border-radius: var(--radius-card-lg);
+  padding: 48px 40px 32px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+.footer-top-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 36px;
+}
+
+@media (min-width: 768px) {
+  .footer-top-grid {
+    grid-template-columns: 1.3fr 1fr 1fr 1.4fr;
+  }
+}
+
+.footer-brand-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-brand-col p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  max-width: 300px;
+}
+
+.footer-social-icons-row {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  color: var(--teal-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.88rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.footer-social-btn:hover {
+  background: var(--teal-dark);
+  color: #FFFFFF;
+}
+
+.footer-links-col h4 {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--teal-dark);
+  margin-bottom: 14px;
+}
+
+.footer-links-col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links-col a {
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.footer-links-col a:hover {
+  color: var(--teal-dark);
+}
+
+.footer-newsletter-col h4 {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--teal-dark);
+  margin-bottom: 14px;
+}
+
+.footer-newsletter-col p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.newsletter-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.newsletter-input-box {
+  padding: 12px 16px;
+  background: #FFFFFF;
+  border: 1px solid #D2E0E5;
+  border-radius: var(--radius-sm);
+  font-family: inherit;
+  font-size: 0.88rem;
+}
+
+.footer-bottom-row {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+  border-top: 1px solid rgba(5, 75, 87, 0.08);
+}
+
+@media (min-width: 600px) {
+  .footer-bottom-row {
+    flex-direction: row;
+  }
+}
+
+.footer-copyright-text {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.btn-back-to-top {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--teal-dark);
+}
+
+.btn-back-to-top:hover {
+  color: var(--teal-accent-blue);
+}
+
+/* ==========================================================================
+   FLOATING WHATSAPP BUTTON (ESTILO VILLAHERMOSA)
+   ========================================================================== */
+.floating-whatsapp-trigger {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--whatsapp-green);
+  color: #FFFFFF;
+  padding: 12px 20px;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.35);
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: pulseWhatsapp 2.5s infinite;
+}
+
+.floating-whatsapp-trigger:hover {
+  background-color: var(--whatsapp-hover);
+  transform: scale(1.04);
+}
+
+@keyframes pulseWhatsapp {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+  70% { box-shadow: 0 0 0 16px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+/* ==========================================================================
+   NATIVE DIALOGS (MODALS ACCESIBLES)
+   ========================================================================== */
+dialog {
+  margin: auto;
+  border: none;
+  border-radius: var(--radius-card-lg);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+  padding: 0;
+  max-width: 540px;
+  width: 90vw;
+  background: #FFFFFF;
+}
+
+dialog::backdrop {
+  background: rgba(8, 25, 31, 0.65);
+  backdrop-filter: blur(6px);
+}
+
+.modal-inner-card {
+  padding: 34px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.modal-icon-success {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #D9F7BE;
+  color: #389E0D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.modal-inner-card h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--teal-darker);
+}
+
+.modal-inner-card p {
+  font-size: 0.94rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.modal-actions-group {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 600px) {
+  body {
+    padding: 12px 8px;
+  }
+
+  .page-container {
+    padding: 16px 14px;
+    gap: 20px;
+    border-radius: 24px;
+  }
+
+  .hero-main-banner-card {
+    padding: 28px 20px;
+  }
+
+  .dark-teal-section-wrapper {
+    padding: 32px 20px;
+  }
+
+  .estilo-molar-feature-section {
+    padding: 32px 18px;
+  }
+
+  .booking-form-card {
+    padding: 24px 18px;
+  }
+
+  .site-footer-card {
+    padding: 32px 20px;
+  }
+
+  .floating-whatsapp-trigger span.label-text {
+    display: none;
+  }
+
+  .floating-whatsapp-trigger {
+    padding: 14px;
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    justify-content: center;
+  }
+}

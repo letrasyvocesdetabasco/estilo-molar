@@ -103,6 +103,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // Sanitizador seguro para URLs de WhatsApp: elimina emojis y caracteres que causan '???' o simbolos invalidos
+  function cleanForWhatsApp(text) {
+    if (!text) return '';
+    return text
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '') // Remueve tildes para maxima compatibilidad en WhatsApp intents
+      .replace(/[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}]/gu, '') // Remueve emojis
+      .replace(/[\u2022\u2023\u25E6\u2043\u2219]/g, '-') // Convierte viñetas raras a guion simple
+      .replace(/[^\w\s.,;:()\-/@$%+!]/gi, ' ') // Remueve simbolos no estandar
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+
   /* ==========================================================================
      3. Pedidos Directos de Gorros por WhatsApp
      ========================================================================== */
@@ -111,24 +124,32 @@ document.addEventListener('DOMContentLoaded', () => {
   gorroOrderButtons.forEach((btn) => {
     btn.addEventListener('click', (e) => {
       const card = e.target.closest('.product-gorro-card');
-      const title = card ? card.querySelector('.product-title-row h3')?.innerText : 'Gorro Quirúrgico';
-      const price = card ? card.querySelector('.product-price-value')?.innerText : '$150 MXN';
+      const rawTitle = card ? card.querySelector('.product-title-row h3')?.innerText : 'Gorro Quirurgico';
+      const rawPrice = card ? card.querySelector('.product-price-value')?.innerText : '$150 MXN';
 
-      const message = `👋 ¡Hola Dra. Dariana! Me encantó el gorro quirúrgico modelo *${title}* (${price}) de su catálogo oficial en línea. ¿Tiene disponibilidad para entrega en Villahermosa o envío?`;
-      const encodedMsg = encodeURIComponent(message);
-      const whatsappUrl = `https://wa.me/${CLINIC_WHATSAPP}?text=${encodedMsg}`;
+      const title = cleanForWhatsApp(rawTitle) || 'Gorro Quirurgico';
+      const price = cleanForWhatsApp(rawPrice) || '$150 MXN';
 
-      window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+      const message = `Hola Dra. Dariana, me interesa el gorro quirurgico modelo *${title}* (${price}) del catalogo oficial de Estilo Molar. Deseo consultar disponibilidad para entrega o envio en Villahermosa.`;
+      const whatsappUrl = `https://api.whatsapp.com/send?phone=${CLINIC_WHATSAPP}&text=${encodeURIComponent(message)}`;
+
+      const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      if (isMobile) {
+        window.location.href = whatsappUrl;
+      } else {
+        window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+      }
     });
   });
 
   /* ==========================================================================
-     4. Agendar Cita Dental (Formulario -> WhatsApp & Modal)
+     4. Agendar Cita Dental (Formulario -> WhatsApp Directo y Limpio)
      ========================================================================== */
   const appointmentForm = document.getElementById('dentalBookingForm');
   const bookingSuccessModal = document.getElementById('bookingSuccessModal');
   const modalCloseBtn = document.getElementById('closeModalBtn');
   const modalWhatsappLink = document.getElementById('modalWhatsappConfirmLink');
+  const bookingFeedback = document.getElementById('bookingDirectFeedback');
   const bookDateInput = document.getElementById('bookDate');
 
   if (bookDateInput) {
@@ -140,41 +161,51 @@ document.addEventListener('DOMContentLoaded', () => {
     appointmentForm.addEventListener('submit', (e) => {
       e.preventDefault();
 
-      const name = document.getElementById('bookName').value.trim();
-      const phone = document.getElementById('bookPhone').value.trim();
-      const email = document.getElementById('bookEmail').value.trim();
-      const date = document.getElementById('bookDate').value;
-      const time = document.getElementById('bookTime').value;
-      const service = document.getElementById('bookService').value;
-      const notes = document.getElementById('bookNotes').value.trim();
+      const rawName = document.getElementById('bookName').value.trim();
+      const rawPhone = document.getElementById('bookPhone').value.trim();
+      const rawEmail = document.getElementById('bookEmail').value.trim();
+      const rawDate = document.getElementById('bookDate').value;
+      const rawTime = document.getElementById('bookTime').value;
+      const rawService = document.getElementById('bookService').value;
+      const rawNotes = document.getElementById('bookNotes').value.trim();
 
-      if (!name || !phone || !date || !time) {
+      if (!rawName || !rawPhone || !rawDate || !rawTime) {
         alert('Por favor completa todos los campos requeridos para tu cita.');
         return;
       }
 
-      // Generar mensaje estructurado y amigable para WhatsApp
-      const appointmentMessage = 
-`✨ *SOLICITUD DE CITA DENTAL | DRA. DARIANA PAMELA* ✨
-¡Hola Dra. Dariana! 👋 Me gustaría agendar una consulta en su consultorio en Villahermosa:
+      const name = cleanForWhatsApp(rawName);
+      const phone = cleanForWhatsApp(rawPhone);
+      const email = rawEmail ? cleanForWhatsApp(rawEmail) : '';
+      const service = cleanForWhatsApp(rawService);
+      const notes = rawNotes ? cleanForWhatsApp(rawNotes) : '';
 
-• 👤 *Paciente:* ${name}
-• 📱 *WhatsApp:* ${phone}
-• 🗓 *Fecha deseada:* ${date}
-• ⏰ *Horario:* ${time}
-• 🦷 *Tratamiento:* ${service}
-${notes ? `• 💬 *Motivo o notas:* ${notes}\n` : ''}
-📍 *Villahermosa, Tabasco*
-¡Quedo a la espera de su confirmación! Muchas gracias. 😊`;
+      // Construccion de mensaje 100% limpio en WhatsApp Markdown (cero emojis ni caracteres invalidos)
+      const messageLines = [
+        '*SOLICITUD DE CITA DENTAL - DRA. DARIANA PAMELA*',
+        'Hola Dra. Dariana, deseo agendar una consulta en su consultorio en Villahermosa:',
+        '',
+        `- *Paciente:* ${name}`,
+        `- *Telefono / WhatsApp:* ${phone}`,
+        email ? `- *Correo:* ${email}` : null,
+        `- *Fecha deseada:* ${rawDate}`,
+        `- *Horario:* ${rawTime}`,
+        `- *Tratamiento:* ${service}`,
+        notes ? `- *Notas:* ${notes}` : null,
+        '',
+        '*Ubicacion:* Av. Paseo Tabasco, Villahermosa, Tabasco.',
+        'Quedo a la espera de su confirmacion. Muchas gracias.'
+      ].filter(Boolean);
 
-      const whatsappUrl = `https://wa.me/${CLINIC_WHATSAPP}?text=${encodeURIComponent(appointmentMessage)}`;
+      const appointmentMessage = messageLines.join('\n');
+      const whatsappUrl = `https://api.whatsapp.com/send?phone=${CLINIC_WHATSAPP}&text=${encodeURIComponent(appointmentMessage)}`;
 
-      // Actualizar enlace del modal
+      // Actualizar enlace en modal si el usuario decide consultarlo
       if (modalWhatsappLink) {
         modalWhatsappLink.href = whatsappUrl;
       }
 
-      // Actualizar resumen en el modal de forma segura (sin riesgo de inyección HTML)
+      // Actualizar resumen en el modal de forma segura
       const modalSummary = document.getElementById('modalAppointmentSummary');
       if (modalSummary) {
         modalSummary.textContent = '';
@@ -184,23 +215,48 @@ ${notes ? `• 💬 *Motivo o notas:* ${notes}\n` : ''}
 
         const p2 = document.createElement('div');
         p2.innerHTML = '<strong>Tratamiento:</strong> ';
-        p2.appendChild(document.createTextNode(service));
+        p2.appendChild(document.createTextNode(rawService));
 
         const p3 = document.createElement('div');
         p3.innerHTML = '<strong>Fecha y Hora:</strong> ';
-        p3.appendChild(document.createTextNode(`${date} a las ${time}`));
+        p3.appendChild(document.createTextNode(`${rawDate} a las ${rawTime}`));
 
         modalSummary.appendChild(p1);
         modalSummary.appendChild(p2);
         modalSummary.appendChild(p3);
       }
 
-      // Mostrar modal accesible
-      if (bookingSuccessModal && typeof bookingSuccessModal.showModal === 'function') {
-        bookingSuccessModal.showModal();
+      // Feedback visual directo en el boton del formulario
+      const submitBtn = appointmentForm.querySelector('button[type="submit"]');
+      const originalBtnHtml = submitBtn ? submitBtn.innerHTML : '';
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.style.opacity = '0.92';
+        submitBtn.innerHTML = '<span>Abriendo WhatsApp...</span><span class="arrow-icon-circle">✓</span>';
+      }
+
+      if (bookingFeedback) {
+        bookingFeedback.style.display = 'block';
+        bookingFeedback.innerHTML = `<p style="margin: 0; color: #0E6D81; font-weight: 600; font-size: 0.9rem;">✓ Solicitud generada con exito. Si WhatsApp no se abre automaticamente, <a href="${whatsappUrl}" target="_blank" rel="noopener noreferrer" style="color: #128C7E; font-weight: 800; text-decoration: underline;">haz clic aqui para enviar tu mensaje</a>.</p>`;
+      }
+
+      // Envio directo a WhatsApp sin pantallas intermedias obligatorias
+      const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      if (isMobile) {
+        window.location.href = whatsappUrl;
       } else {
         window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
       }
+
+      // Restaurar estado del boton despues de 4 segundos
+      setTimeout(() => {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.style.opacity = '1';
+          submitBtn.innerHTML = originalBtnHtml;
+        }
+      }, 4000);
     });
   }
 

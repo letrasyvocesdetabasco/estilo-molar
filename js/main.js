@@ -4,8 +4,8 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Teléfono oficial de WhatsApp de la clínica en Villahermosa
-  const CLINIC_WHATSAPP = '529932405890';
+  // Teléfono oficial de WhatsApp de Dariana Pamela en Villahermosa
+  const CLINIC_WHATSAPP = '529934153041';
 
   /* ==========================================================================
      1. Menú Móvil (Drawer & Overlay)

@@ -1694,6 +1694,7 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 15%;
 }
 
 .booking-floating-contact-info {
@@ -2277,7 +2278,21 @@ dialog::backdrop {
     min-height: 46px;
   }
 
+  /* Reordenar hero para que la foto de Dariana aparezca antes de las mini-cards */
+  .hero-left-column {
+    display: contents;
+  }
+
+  .hero-main-banner-card {
+    order: 1;
+  }
+
+  .hero-right-column {
+    order: 2;
+  }
+
   .hero-mini-cards-row {
+    order: 3;
     grid-template-columns: 1fr;
     gap: 10px;
   }
@@ -2293,7 +2308,7 @@ dialog::backdrop {
     gap: 10px;
   }
 
-  /* 3. Hero Main Photo Card con encuadre óptimo de la Doctora y Gorros */
+  /* 3. Hero Main Photo Card con encuadre óptimo de Dariana Pamela */
   .hero-main-photo-card {
     min-height: 400px;
     max-height: 470px;
@@ -2303,7 +2318,7 @@ dialog::backdrop {
   }
 
   .hero-main-photo-card img {
-    object-position: center 8%; /* Rostro sonriente y colección de gorros visibles */
+    object-position: center 12%; /* Rostro sonriente de Dariana Pamela perfectamente visible */
   }
 
   .floating-photo-pill {

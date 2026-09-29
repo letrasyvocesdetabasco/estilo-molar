@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- SEO & Títulos para Google -->
-  <title>Dariana Pamela Peregrino Cabrera | Odontología & Gorros Quirúrgicos Estilo Molar • Villahermosa</title>
-  <meta name="description" content="Atención odontológica dedicada, preventiva y estética con calidez en Villahermosa, Tabasco por E.C.D. Dariana Pamela Peregrino Cabrera. Venta de gorros quirúrgicos exclusivos Estilo Molar Caps. ¡Agenda tu cita hoy!">
+  <title>Dra. Dariana Pamela Peregrino Cabrera | Cirujana Dentista & Estilo Molar Caps Villahermosa</title>
+  <meta name="description" content="Atención odontológica integral, estética y preventiva en Villahermosa por la Dra. Dariana Pamela Peregrino Cabrera. Venta oficial de gorros quirúrgicos Estilo Molar Caps. ¡Agenda tu cita!">
   <meta name="keywords" content="dentista villahermosa, odontologa tabasco, dariana pamela peregrino cabrera, estilo molar caps, gorros quirurgicos villahermosa, profilaxis dental, resinas esteticas, blanqueamiento dental villahermosa">
-  <meta name="author" content="E.C.D. Dariana Pamela Peregrino Cabrera & Estilo Molar Caps">
+  <meta name="author" content="Dra. Dariana Pamela Peregrino Cabrera • Estilo Molar Caps">
   <meta name="robots" content="index, follow">
 
   <!-- Favicon oficial de la Doctora (Logo Diente solicitado explícitamente para pestañas y Google) -->
@@ -19,7 +19,7 @@
 
   <!-- Open Graph / Meta para Google y Redes Sociales -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Dariana Pamela Peregrino Cabrera | Odontología & Estilo Molar Caps">
+  <meta property="og:title" content="Dra. Dariana Pamela Peregrino Cabrera | Cirujana Dentista & Estilo Molar Caps">
   <meta property="og:description" content="Atención bucal profesional y dedicada, profilaxis, resinas estéticas y colección exclusiva de gorros quirúrgicos en Villahermosa, Tabasco.">
   <meta property="og:image" content="assets/images/dra_dariana_pamela_hero.jpg">
   <meta property="og:url" content="https://letrasyvocesdetabasco.github.io/estilo-molar/">
@@ -81,12 +81,12 @@
 <body>
 
   <!-- Contenedor Principal de la Página (Calca del lienzo LuxeSmile) -->
-  <div class="page-container">
 
     <!-- ==========================================================================
          HEADER / NAVEGACIÓN
          ========================================================================== -->
-    <header class="site-header">
+    <header class="site-header-wrapper">
+    <div class="container site-header-inner">
       <div class="header-left">
         <button class="menu-toggle-btn" aria-label="Abrir menú de navegación">
           <div class="menu-icon-bars">
@@ -126,7 +126,8 @@
           <span class="arrow-icon-circle">↗</span>
         </a>
       </div>
-    </header>
+    </div>
+  </header>
 
     <!-- Drawer Menú Móvil -->
     <div class="mobile-nav-overlay" id="mobileNavOverlay">
@@ -170,7 +171,8 @@
     <!-- ==========================================================================
          HERO SECTION BENTO (CALCA EXACTA DEL DISEÑO)
          ========================================================================== -->
-    <section class="hero-bento-grid" id="inicio">
+    <section class="hero-section-wrapper" id="inicio">
+    <div class="container hero-bento-grid">
       <!-- Columna Izquierda Hero -->
       <div class="hero-left-column">
         <!-- Banner Principal Azul Claro -->
@@ -179,9 +181,9 @@
             <span class="section-badge-pill">🦷 ATENCIÓN DEDICADA & SIN PRISAS</span>
             
             <div class="hero-avatars-cluster">
-              <span class="avatar-circle" style="background: var(--pastel-cyan); display: inline-flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.72rem; color: var(--teal-darker);">DP</span>
-              <span class="avatar-circle" style="background: var(--pastel-peach); display: inline-flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.72rem; color: var(--teal-darker);">CP</span>
-              <span class="avatar-circle" style="background: var(--pastel-pink); display: inline-flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.72rem; color: var(--teal-darker);">VG</span>
+              <img src="assets/images/avatar_valeria_gomez.jpg" class="avatar-circle-img" alt="Paciente Valeria Gómez" width="34" height="34">
+              <img src="assets/images/avatar_carlos_peralta.jpg" class="avatar-circle-img" alt="Paciente Carlos Peralta" width="34" height="34">
+              <img src="assets/images/avatar_andrea_salgado.jpg" class="avatar-circle-img" alt="Dra. Andrea Salgado" width="34" height="34">
             </div>
 
             <div class="rating-stars-wrapper">
@@ -195,7 +197,7 @@
           </h1>
 
           <p class="hero-description-text">
-            Atención odontológica preventiva, detallada y cercana en Villahermosa, Tabasco por la recién egresada <strong>E.C.D. Dariana Pamela Peregrino Cabrera</strong>. Además, conoce <strong>Estilo Molar Caps</strong>: gorros quirúrgicos de confección artesanal para llenar de alegría cada consulta.
+            Atención odontológica preventiva, detallada y cercana en Villahermosa, Tabasco por la <strong>Dra. Dariana Pamela Peregrino Cabrera</strong>, Cirujana Dentista. Además, conoce <strong>Estilo Molar Caps</strong>: gorros quirúrgicos de confección artesanal para llenar de alegría cada consulta.
           </p>
 
           <div class="hero-action-buttons-row">
@@ -213,26 +215,29 @@
 
         <!-- Mini Cards Inferiores Izquierda -->
         <div class="hero-mini-cards-row">
-          <!-- Mini Card 1: Experiencia Clínica con Foto Real de Dariana Pamela -->
-          <div class="mini-card-experience">
-            <img src="assets/images/dra_thumbsup_equipo.jpg" alt="Dariana Pamela con gorro quirúrgico y protección clínica" loading="lazy" style="object-position: center 20%;">
-            <div class="mini-badge-overlay">
+          <!-- Mini Card 1: Foto Real Despejada de Dra. Dariana Pamela -->
+          <div class="mini-card-experience-modern">
+            <div class="mini-card-photo-box">
+              <img src="assets/images/dra_thumbsup_equipo.jpg" alt="Dra. Dariana Pamela en atención odontológica con gorro y protección clínica" loading="lazy">
+              <span class="mini-card-floating-badge">👩‍⚕️ Dra. Dariana Pamela</span>
+            </div>
+            <div class="mini-badge-caption-box">
               <span class="mini-badge-title">Atención Minuciosa & Cercana</span>
               <span class="mini-badge-sub">Odontología preventiva, dedicada y sin dolor en Villahermosa.</span>
             </div>
           </div>
 
-          <!-- Mini Card 2: Reseña / Frase Destacada -->
+          <!-- Mini Card 2: Reseña Real con Avatar Fotográfico -->
           <div class="mini-card-testimonial">
             <div class="testimonial-author-row">
-              <div class="story-client-avatar-badge" style="width: 40px; height: 40px; font-size: 0.85rem; background: var(--pastel-peach);">MM</div>
+              <img src="assets/images/avatar_valeria_gomez.jpg" alt="Mariana Morales" class="story-client-avatar-img-sm">
               <div class="testimonial-author-info">
                 <h4>Mariana Morales</h4>
-                <p>Paciente de Profilaxis y Resinas</p>
+                <p>Paciente de Resinas & Profilaxis</p>
               </div>
             </div>
             <div class="testimonial-bubble-text">
-              "¡Dariana tiene una paciencia increíble! Me explicó todo paso a paso, su trato fue súper suave y salí encantada con mis resinas y mi gorro de Estilo Molar."
+              "¡La Dra. Dariana tiene una paciencia increíble! Me explicó todo paso a paso, su trato fue súper suave y salí encantada con mis resinas y mi gorro de Estilo Molar."
             </div>
           </div>
         </div>
@@ -242,9 +247,9 @@
       <div class="hero-right-column">
         <!-- Foto Principal Alta: Foto Oficial de Dariana Pamela Peregrino Cabrera -->
         <div class="hero-main-photo-card">
-          <img src="assets/images/dra_dariana_pamela_hero.jpg" alt="Dariana Pamela Peregrino Cabrera en bata médica profesional" fetchpriority="high">
+          <img src="assets/images/dra_dariana_pamela_hero.jpg" alt="Dra. Dariana Pamela Peregrino Cabrera en consultorio dental" fetchpriority="high">
           <div class="floating-photo-pill">
-            <span>✨ Dariana Pamela • Pasante de Odontología & Emprendedora</span>
+            <span>✨ Dra. Dariana Pamela • Cirujana Dentista & Fundadora</span>
           </div>
 
           <!-- Dos Tarjetas Horizontales Flotantes en Frosted Glass (Calca Exacta del Diseño) -->
@@ -267,21 +272,23 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ==========================================================================
-         ABOUT US SECTION (CONTENEDOR AZUL TEAL OSCURO - CALCA EXACTA)
+  <!-- ==========================================================================
+       ABOUT US SECTION (CONTENEDOR AZUL TEAL OSCURO - CALCA EXACTA)
          ========================================================================== -->
     <section class="dark-teal-section-wrapper" id="sobre-mi">
+    <div class="container">
       <!-- Encabezado de la sección -->
       <div class="section-header-row">
         <div class="section-header-left">
-          <span class="section-badge-pill on-dark">🦷 SOBRE DARIANA PAMELA & CONSULTORIO</span>
+          <span class="section-badge-pill on-dark">🦷 SOBRE LA DRA. DARIANA PAMELA</span>
           <h2 class="section-main-title light-text">
             Pasión por la Odontología, Vocación de Servicio
           </h2>
           <p class="section-subtext">
-            Como recién egresada con vocación de servicio, me dedico a brindar una atención bucal cercana, preventiva y sin dolor, tomándome el tiempo necesario para cada paciente en Villahermosa, Tabasco.
+            Dedicada a brindar una atención bucal cercana, preventiva y sin dolor, tomándome el tiempo necesario para cada paciente en Villahermosa, Tabasco con los más altos estándares éticos y de bioseguridad.
           </p>
         </div>
 
@@ -345,13 +352,15 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ==========================================================================
-         SECCIÓN DESTACADA: ESTILO MOLAR • GORROS QUIRÚRGICOS
+  <!-- ==========================================================================
+       SECCIÓN DESTACADA: ESTILO MOLAR • GORROS QUIRÚRGICOS
          (Integración especial de la marca y tienda en Instagram)
          ========================================================================== -->
     <section class="estilo-molar-feature-section" id="gorros-quirurgicos">
+    <div class="container">
       <!-- Encabezado con Logotipo Oficial Estilo Molar -->
       <div class="estilo-molar-brand-banner">
         <div class="brand-showcase-title-group">
@@ -362,11 +371,12 @@
               Colección Exclusiva "Estilo Molar Caps"
             </h2>
             <p style="color: var(--text-muted); font-size: 0.95rem;">
-              Confeccionados con amor por <strong>Dariana Pamela</strong> para médicos, enfermeros, cirujanos y especialistas en salud.
+              Confeccionados con amor por la <strong>Dra. Dariana Pamela</strong> para médicos, enfermeros, cirujanos y especialistas en salud.
             </p>
             <div style="margin-top: 10px; display: flex; gap: 10px; flex-wrap: wrap;">
-              <a href="https://www.instagram.com/estilomolar_caps/" target="_blank" rel="noopener noreferrer" class="btn-pill-white" style="font-size: 0.85rem; padding: 8px 16px; border: 1px solid rgba(5, 75, 87, 0.25);">
-                <span>📸 Síguenos en Instagram @estilomolar_caps</span>
+              <a href="https://www.instagram.com/estilomolar_caps/" target="_blank" rel="noopener noreferrer" class="btn-instagram-caps" aria-label="Instagram Oficial Estilo Molar Caps">
+                <svg class="svg-brand-icon svg-ig" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                <span>Síguenos en Instagram @estilomolar_caps</span>
                 <span class="arrow-icon-circle">↗</span>
               </a>
             </div>
@@ -402,10 +412,7 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Colección Estilo Molar Multicolor por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Colección Estilo Molar Multicolor por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
@@ -426,10 +433,7 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Molar Sketch Black & White por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Molar Sketch Black & White por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
@@ -450,10 +454,7 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Rosa Medical Love por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Rosa Medical Love por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
@@ -474,10 +475,7 @@
                 <span class="product-price-value">$135 MXN</span>
                 <span class="product-price-note">Desde 20 piezas • Envío Gratis</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Confección por Mayoreo & Institucional por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Confección por Mayoreo & Institucional por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
@@ -498,10 +496,7 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Pica Fresa Dulce por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Pica Fresa Dulce por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
@@ -522,10 +517,7 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Disney Lilo & Stitch por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Disney Lilo & Stitch por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
@@ -546,10 +538,7 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Búhos de la Sabiduría por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Búhos de la Sabiduría por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
@@ -570,16 +559,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Snoopy Navy Clínico por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Snoopy Navy Clínico por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 9: Gorro Snoopy & Woodstock Fun -->
-        <article class="product-gorro-card" data-category="animados">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="animados">
           <div class="product-image-container">
             <span class="product-badge-corner">💛 1 Disponible</span>
             <img src="assets/images/catalog/gorro_snoopy_fun.webp" alt="Gorro Snoopy & Woodstock Fun - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -594,16 +580,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Snoopy & Woodstock Fun por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Snoopy & Woodstock Fun por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 10: Gorro Patitos de Hule -->
-        <article class="product-gorro-card" data-category="animados pink">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="animados pink">
           <div class="product-image-container">
             <span class="product-badge-corner">🦆 1 Disponible</span>
             <img src="assets/images/catalog/gorro_patitos.webp" alt="Gorro Patitos de Hule - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -618,16 +601,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Patitos de Hule por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Patitos de Hule por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 11: Gorro My Melody Pastel -->
-        <article class="product-gorro-card" data-category="pink animados">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="pink animados">
           <div class="product-image-container">
             <span class="product-badge-corner">🎀 1 Disponible</span>
             <img src="assets/images/catalog/gorro_my_melody.webp" alt="Gorro My Melody Pastel - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -642,16 +622,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro My Melody Pastel por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro My Melody Pastel por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 12: Gorro BTS K-Pop Army -->
-        <article class="product-gorro-card" data-category="anime-pop">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="anime-pop">
           <div class="product-image-container">
             <span class="product-badge-corner">💜 1 Disponible</span>
             <img src="assets/images/catalog/gorro_bts.webp" alt="Gorro BTS K-Pop Army - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -666,16 +643,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro BTS K-Pop Army por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro BTS K-Pop Army por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 13: Gorro Ositos de Gomita -->
-        <article class="product-gorro-card" data-category="pink animados">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="pink animados">
           <div class="product-image-container">
             <span class="product-badge-corner">🐻 1 Disponible</span>
             <img src="assets/images/catalog/gorro_gomitas.webp" alt="Gorro Ositos de Gomita - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -690,16 +664,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Ositos de Gomita por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Ositos de Gomita por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 14: Gorro Catarinas & Flores -->
-        <article class="product-gorro-card" data-category="pink animados">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="pink animados">
           <div class="product-image-container">
             <span class="product-badge-corner">🐞 1 Disponible</span>
             <img src="assets/images/catalog/gorro_mariquitas.webp" alt="Gorro Catarinas & Flores - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -714,16 +685,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Catarinas & Flores por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Catarinas & Flores por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 15: Gorro Lana Del Rey Born to Die -->
-        <article class="product-gorro-card" data-category="anime-pop">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="anime-pop">
           <div class="product-image-container">
             <span class="product-badge-corner">🎶 1 Disponible</span>
             <img src="assets/images/catalog/gorro_lana_del_rey.webp" alt="Gorro Lana Del Rey Born to Die - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -738,16 +706,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Lana Del Rey Born to Die por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Lana Del Rey Born to Die por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 16: Gorro Hello Kitty & Fresas -->
-        <article class="product-gorro-card" data-category="pink animados">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="pink animados">
           <div class="product-image-container">
             <span class="product-badge-corner">🍓 1 Disponible</span>
             <img src="assets/images/catalog/gorro_hello_kitty.webp" alt="Gorro Hello Kitty & Fresas - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -762,16 +727,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Hello Kitty & Fresas por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Hello Kitty & Fresas por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 17: Gorro One Direction 1D Retro -->
-        <article class="product-gorro-card" data-category="anime-pop">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="anime-pop">
           <div class="product-image-container">
             <span class="product-badge-corner">🎤 1 Disponible</span>
             <img src="assets/images/catalog/gorro_one_direction.webp" alt="Gorro One Direction 1D Retro - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -786,16 +748,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro One Direction 1D Retro por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro One Direction 1D Retro por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 18: Gorro Harry Styles Love On Tour -->
-        <article class="product-gorro-card" data-category="anime-pop">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="anime-pop">
           <div class="product-image-container">
             <span class="product-badge-corner">🎸 1 Disponible</span>
             <img src="assets/images/catalog/gorro_harry_styles.webp" alt="Gorro Harry Styles Love On Tour - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -810,16 +769,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Harry Styles Love On Tour por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Harry Styles Love On Tour por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 19: Gorro Acuarela Pastel Dream -->
-        <article class="product-gorro-card" data-category="pink">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="pink">
           <div class="product-image-container">
             <span class="product-badge-corner">🎨 1 Disponible</span>
             <img src="assets/images/catalog/gorro_colores_pastel.webp" alt="Gorro Acuarela Pastel Dream - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -834,16 +790,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Acuarela Pastel Dream por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Acuarela Pastel Dream por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 20: Gorro Taylor Swift The Eras -->
-        <article class="product-gorro-card" data-category="anime-pop pink">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="anime-pop pink">
           <div class="product-image-container">
             <span class="product-badge-corner">✨ 1 Disponible</span>
             <img src="assets/images/catalog/gorro_taylor_swift.webp" alt="Gorro Taylor Swift The Eras - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -858,16 +811,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Taylor Swift The Eras por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Taylor Swift The Eras por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 21: Gorro Lana Del Rey Floral Chic -->
-        <article class="product-gorro-card" data-category="anime-pop">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="anime-pop">
           <div class="product-image-container">
             <span class="product-badge-corner">🥀 1 Disponible</span>
             <img src="assets/images/catalog/gorro_lana_del_rey_2.webp" alt="Gorro Lana Del Rey Floral Chic - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -882,16 +832,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Lana Del Rey Floral Chic por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Lana Del Rey Floral Chic por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 22: Gorro Zayn Malik R&B -->
-        <article class="product-gorro-card" data-category="anime-pop">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="anime-pop">
           <div class="product-image-container">
             <span class="product-badge-corner">🎧 1 Disponible</span>
             <img src="assets/images/catalog/gorro_zayn.webp" alt="Gorro Zayn Malik R&B - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -906,16 +853,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Zayn Malik R&B por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Zayn Malik R&B por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 23: Gorro Anatomía Corazón & Flores -->
-        <article class="product-gorro-card" data-category="molar">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="molar">
           <div class="product-image-container">
             <span class="product-badge-corner">🫀 1 Disponible</span>
             <img src="assets/images/catalog/gorro_anatomia_floral.webp" alt="Gorro Anatomía Corazón & Flores - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -930,16 +874,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Anatomía Corazón & Flores por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Anatomía Corazón & Flores por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 24: Gorro Kenia Os K23 Pop -->
-        <article class="product-gorro-card" data-category="anime-pop pink">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="anime-pop pink">
           <div class="product-image-container">
             <span class="product-badge-corner">👑 1 Disponible</span>
             <img src="assets/images/catalog/gorro_kenia_os.webp" alt="Gorro Kenia Os K23 Pop - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -954,16 +895,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Kenia Os K23 Pop por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Kenia Os K23 Pop por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 25: Gorro Tigger Tigre Saltador -->
-        <article class="product-gorro-card" data-category="animados">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="animados">
           <div class="product-image-container">
             <span class="product-badge-corner">🐯 1 Disponible</span>
             <img src="assets/images/catalog/gorro_tigger.webp" alt="Gorro Tigger Tigre Saltador - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -978,16 +916,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Tigger Tigre Saltador por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Tigger Tigre Saltador por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 26: Gorro Winnie The Pooh Miel -->
-        <article class="product-gorro-card" data-category="animados">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="animados">
           <div class="product-image-container">
             <span class="product-badge-corner">🍯 1 Disponible</span>
             <img src="assets/images/catalog/gorro_pooh.webp" alt="Gorro Winnie The Pooh Miel - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -1002,16 +937,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Winnie The Pooh Miel por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Winnie The Pooh Miel por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 27: Gorro Instrumental Dental Pro -->
-        <article class="product-gorro-card" data-category="molar">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="molar">
           <div class="product-image-container">
             <span class="product-badge-corner">🦷 1 Disponible</span>
             <img src="assets/images/catalog/gorro_odontologia_dientes.webp" alt="Gorro Instrumental Dental Pro - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -1026,16 +958,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Instrumental Dental Pro por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Instrumental Dental Pro por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 28: Gorro Chainsaw Man & Pochita -->
-        <article class="product-gorro-card" data-category="anime-pop">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="anime-pop">
           <div class="product-image-container">
             <span class="product-badge-corner">🪚 1 Disponible</span>
             <img src="assets/images/catalog/gorro_chainsaw_man.webp" alt="Gorro Chainsaw Man & Pochita - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -1050,16 +979,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Chainsaw Man & Pochita por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Chainsaw Man & Pochita por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 29: Gorro Hollow Knight Hallownest -->
-        <article class="product-gorro-card" data-category="anime-pop">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="anime-pop">
           <div class="product-image-container">
             <span class="product-badge-corner">⚔️ 1 Disponible</span>
             <img src="assets/images/catalog/gorro_hollow_knight.webp" alt="Gorro Hollow Knight Hallownest - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -1074,16 +1000,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Hollow Knight Hallownest por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Hollow Knight Hallownest por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 30: Gorro Alfredo Olivas El Patrón -->
-        <article class="product-gorro-card" data-category="anime-pop">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="anime-pop">
           <div class="product-image-container">
             <span class="product-badge-corner">🎺 1 Disponible</span>
             <img src="assets/images/catalog/gorro_alfredo_olivas.webp" alt="Gorro Alfredo Olivas El Patrón - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -1098,16 +1021,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Alfredo Olivas El Patrón por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Alfredo Olivas El Patrón por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 31: Gorro Ortodoncia & Brackets -->
-        <article class="product-gorro-card" data-category="molar">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="molar">
           <div class="product-image-container">
             <span class="product-badge-corner">😁 1 Disponible</span>
             <img src="assets/images/catalog/gorro_odontologia_orto.webp" alt="Gorro Ortodoncia & Brackets - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -1122,16 +1042,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Ortodoncia & Brackets por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Ortodoncia & Brackets por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 32: Gorro Panditas & Bambú -->
-        <article class="product-gorro-card" data-category="animados">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="animados">
           <div class="product-image-container">
             <span class="product-badge-corner">🐼 1 Disponible</span>
             <img src="assets/images/catalog/gorro_panda.webp" alt="Gorro Panditas & Bambú - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -1146,16 +1063,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Panditas & Bambú por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Panditas & Bambú por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 33: Gorro Mickey Mouse Clásico -->
-        <article class="product-gorro-card" data-category="animados">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="animados">
           <div class="product-image-container">
             <span class="product-badge-corner">🐭 1 Disponible</span>
             <img src="assets/images/catalog/gorro_disney_mickey.webp" alt="Gorro Mickey Mouse Clásico - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -1170,16 +1084,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Mickey Mouse Clásico por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Mickey Mouse Clásico por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 34: Gorro Checo Pérez 11 F1 -->
-        <article class="product-gorro-card" data-category="anime-pop">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="anime-pop">
           <div class="product-image-container">
             <span class="product-badge-corner">🏎️ 1 Disponible</span>
             <img src="assets/images/catalog/gorro_checo_perez.webp" alt="Gorro Checo Pérez 11 F1 - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -1194,16 +1105,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Checo Pérez 11 F1 por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Checo Pérez 11 F1 por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 35: Gorro Star Wars Galáctico -->
-        <article class="product-gorro-card" data-category="anime-pop">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="anime-pop">
           <div class="product-image-container">
             <span class="product-badge-corner">🚀 1 Disponible</span>
             <img src="assets/images/catalog/gorro_star_wars.webp" alt="Gorro Star Wars Galáctico - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -1218,16 +1126,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Star Wars Galáctico por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Star Wars Galáctico por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 36: Gorro Star Wars Imperial Fleet -->
-        <article class="product-gorro-card" data-category="anime-pop">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="anime-pop">
           <div class="product-image-container">
             <span class="product-badge-corner">🛸 1 Disponible</span>
             <img src="assets/images/catalog/gorro_star_wars_dark.webp" alt="Gorro Star Wars Imperial Fleet - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -1242,16 +1147,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Star Wars Imperial Fleet por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Star Wars Imperial Fleet por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 37: Gorro FC Barcelona Campeón -->
-        <article class="product-gorro-card" data-category="anime-pop">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="anime-pop">
           <div class="product-image-container">
             <span class="product-badge-corner">⚽ 1 Disponible</span>
             <img src="assets/images/catalog/gorro_barcelona.webp" alt="Gorro FC Barcelona Campeón - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -1266,16 +1168,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro FC Barcelona Campeón por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro FC Barcelona Campeón por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 38: Gorro Esqueleto Anatómico B&W -->
-        <article class="product-gorro-card" data-category="molar">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="molar">
           <div class="product-image-container">
             <span class="product-badge-corner">💀 1 Disponible</span>
             <img src="assets/images/catalog/gorro_esqueleto.webp" alt="Gorro Esqueleto Anatómico B&W - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -1290,16 +1189,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Esqueleto Anatómico B&W por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Esqueleto Anatómico B&W por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 39: Gorro Malilla Flow Urbano -->
-        <article class="product-gorro-card" data-category="anime-pop">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="anime-pop">
           <div class="product-image-container">
             <span class="product-badge-corner">🧢 1 Disponible</span>
             <img src="assets/images/catalog/gorro_malilla.webp" alt="Gorro Malilla Flow Urbano - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -1314,16 +1210,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Malilla Flow Urbano por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Malilla Flow Urbano por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 40: Gorro Shrek & Amigos Wanted -->
-        <article class="product-gorro-card" data-category="animados">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="animados">
           <div class="product-image-container">
             <span class="product-badge-corner">🧅 1 Disponible</span>
             <img src="assets/images/catalog/gorro_shrek.webp" alt="Gorro Shrek & Amigos Wanted - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -1338,16 +1231,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Shrek & Amigos Wanted por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Shrek & Amigos Wanted por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 41: Gorro South Park Colorado -->
-        <article class="product-gorro-card" data-category="animados">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="animados">
           <div class="product-image-container">
             <span class="product-badge-corner">❄️ 1 Disponible</span>
             <img src="assets/images/catalog/gorro_south_park.webp" alt="Gorro South Park Colorado - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -1362,16 +1252,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro South Park Colorado por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro South Park Colorado por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 42: Gorro Bad Bunny Most Wanted -->
-        <article class="product-gorro-card" data-category="anime-pop">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="anime-pop">
           <div class="product-image-container">
             <span class="product-badge-corner">🐰 1 Disponible</span>
             <img src="assets/images/catalog/gorro_bad_bunny.webp" alt="Gorro Bad Bunny Most Wanted - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -1386,16 +1273,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Bad Bunny Most Wanted por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Bad Bunny Most Wanted por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 43: Gorro Rick & Morty Multiverso -->
-        <article class="product-gorro-card" data-category="animados anime-pop">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="animados anime-pop">
           <div class="product-image-container">
             <span class="product-badge-corner">🧪 1 Disponible</span>
             <img src="assets/images/catalog/gorro_rick_and_morty.webp" alt="Gorro Rick & Morty Multiverso - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -1410,16 +1294,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Rick & Morty Multiverso por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Rick & Morty Multiverso por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 44: Gorro Naruto Shippuden Konoha -->
-        <article class="product-gorro-card" data-category="anime-pop">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="anime-pop">
           <div class="product-image-container">
             <span class="product-badge-corner">🍥 1 Disponible</span>
             <img src="assets/images/catalog/gorro_naruto.webp" alt="Gorro Naruto Shippuden Konoha - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -1434,16 +1315,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Naruto Shippuden Konoha por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Naruto Shippuden Konoha por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 45: Gorro One Piece Sombrero de Paja -->
-        <article class="product-gorro-card" data-category="anime-pop">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="anime-pop">
           <div class="product-image-container">
             <span class="product-badge-corner">🏴‍☠️ 1 Disponible</span>
             <img src="assets/images/catalog/gorro_one_piece.webp" alt="Gorro One Piece Sombrero de Paja - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -1458,16 +1336,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro One Piece Sombrero de Paja por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro One Piece Sombrero de Paja por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 46: Gorro Spider-Man Red & Black -->
-        <article class="product-gorro-card" data-category="anime-pop">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="anime-pop">
           <div class="product-image-container">
             <span class="product-badge-corner">🕷️ 1 Disponible</span>
             <img src="assets/images/catalog/gorro_spiderman.webp" alt="Gorro Spider-Man Red & Black - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -1482,16 +1357,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Spider-Man Red & Black por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Spider-Man Red & Black por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 47: Gorro Demon Slayer: Zenitsu -->
-        <article class="product-gorro-card" data-category="amigos anime-pop">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="amigos anime-pop">
           <div class="product-image-container">
             <span class="product-badge-corner">👥 Dúo Amigos</span>
             <img src="assets/images/catalog/gorro_zenitsu.webp" alt="Gorro Demon Slayer: Zenitsu - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -1506,16 +1378,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Demon Slayer: Zenitsu por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Demon Slayer: Zenitsu por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 48: Gorro Demon Slayer: Tanjiro -->
-        <article class="product-gorro-card" data-category="amigos anime-pop">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="amigos anime-pop">
           <div class="product-image-container">
             <span class="product-badge-corner">👥 Dúo Amigos</span>
             <img src="assets/images/catalog/gorro_tanjiro.webp" alt="Gorro Demon Slayer: Tanjiro - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -1530,16 +1399,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Demon Slayer: Tanjiro por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Demon Slayer: Tanjiro por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 49: Gorro Demon Slayer: Muichiro Tokito -->
-        <article class="product-gorro-card" data-category="amigos anime-pop">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="amigos anime-pop">
           <div class="product-image-container">
             <span class="product-badge-corner">👥 Dúo Amigos</span>
             <img src="assets/images/catalog/gorro_tokito.webp" alt="Gorro Demon Slayer: Muichiro Tokito - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -1554,16 +1420,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Demon Slayer: Muichiro Tokito por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Demon Slayer: Muichiro Tokito por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 50: Gorro Monsters Inc: Sullivan -->
-        <article class="product-gorro-card" data-category="amigos animados">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="amigos animados">
           <div class="product-image-container">
             <span class="product-badge-corner">👥 Dúo Parejas</span>
             <img src="assets/images/catalog/gorro_monsters_inc.webp" alt="Gorro Monsters Inc: Sullivan - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -1578,16 +1441,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Monsters Inc: Sullivan por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Monsters Inc: Sullivan por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 51: Gorro Monsters Inc: Mike Wazowski -->
-        <article class="product-gorro-card" data-category="amigos animados">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="amigos animados">
           <div class="product-image-container">
             <span class="product-badge-corner">👥 Dúo Parejas</span>
             <img src="assets/images/catalog/gorro_mike_wazowski.webp" alt="Gorro Monsters Inc: Mike Wazowski - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -1602,16 +1462,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Monsters Inc: Mike Wazowski por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Monsters Inc: Mike Wazowski por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 52: Gorro Cars: Rayo McQueen #95 -->
-        <article class="product-gorro-card" data-category="amigos animados">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="amigos animados">
           <div class="product-image-container">
             <span class="product-badge-corner">👥 Dúo Amigos</span>
             <img src="assets/images/catalog/gorro_rayo_mcqueen.webp" alt="Gorro Cars: Rayo McQueen #95 - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -1626,16 +1483,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Cars: Rayo McQueen #95 por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Cars: Rayo McQueen #95 por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 53: Gorro Cars: Sally Carrera -->
-        <article class="product-gorro-card" data-category="amigos animados">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="amigos animados">
           <div class="product-image-container">
             <span class="product-badge-corner">👥 Dúo Amigos</span>
             <img src="assets/images/catalog/gorro_sally.webp" alt="Gorro Cars: Sally Carrera - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -1650,16 +1504,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Cars: Sally Carrera por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Cars: Sally Carrera por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 54: Gorro Superpoderosas: Bellota -->
-        <article class="product-gorro-card" data-category="amigos animados">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="amigos animados">
           <div class="product-image-container">
             <span class="product-badge-corner">👥 Trío Heroínas</span>
             <img src="assets/images/catalog/gorro_bellota.webp" alt="Gorro Superpoderosas: Bellota - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -1674,16 +1525,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Superpoderosas: Bellota por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Superpoderosas: Bellota por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 55: Gorro Superpoderosas: Bombón -->
-        <article class="product-gorro-card" data-category="amigos animados pink">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="amigos animados pink">
           <div class="product-image-container">
             <span class="product-badge-corner">👥 Trío Heroínas</span>
             <img src="assets/images/catalog/gorro_bombon.webp" alt="Gorro Superpoderosas: Bombón - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -1698,16 +1546,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Superpoderosas: Bombón por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Superpoderosas: Bombón por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 56: Gorro Lilo & Stitch: Stitch Azul -->
-        <article class="product-gorro-card" data-category="amigos animados">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="amigos animados">
           <div class="product-image-container">
             <span class="product-badge-corner">👥 Dúo Ohana</span>
             <img src="assets/images/catalog/gorro_stitch.webp" alt="Gorro Lilo & Stitch: Stitch Azul - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -1722,16 +1567,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Lilo & Stitch: Stitch Azul por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Lilo & Stitch: Stitch Azul por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 57: Gorro Lilo & Stitch: Ángel Rosa -->
-        <article class="product-gorro-card" data-category="amigos animados pink">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="amigos animados pink">
           <div class="product-image-container">
             <span class="product-badge-corner">👥 Dúo Ohana</span>
             <img src="assets/images/catalog/gorro_angel.webp" alt="Gorro Lilo & Stitch: Ángel Rosa - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -1746,16 +1588,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Lilo & Stitch: Ángel Rosa por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Lilo & Stitch: Ángel Rosa por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 58: Gorro Bob Esponja Sonrisa -->
-        <article class="product-gorro-card" data-category="amigos animados">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="amigos animados">
           <div class="product-image-container">
             <span class="product-badge-corner">👥 Trío Bikini</span>
             <img src="assets/images/catalog/gorro_bob_esponja.webp" alt="Gorro Bob Esponja Sonrisa - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -1770,16 +1609,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Bob Esponja Sonrisa por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Bob Esponja Sonrisa por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 59: Gorro Calamardo Serio & Clarinete -->
-        <article class="product-gorro-card" data-category="amigos animados">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="amigos animados">
           <div class="product-image-container">
             <span class="product-badge-corner">👥 Trío Bikini</span>
             <img src="assets/images/catalog/gorro_calamardo.webp" alt="Gorro Calamardo Serio & Clarinete - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -1794,16 +1630,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Calamardo Serio & Clarinete por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Calamardo Serio & Clarinete por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 60: Gorro Patricio Estrella Playa -->
-        <article class="product-gorro-card" data-category="amigos animados pink">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="amigos animados pink">
           <div class="product-image-container">
             <span class="product-badge-corner">👥 Trío Bikini</span>
             <img src="assets/images/catalog/gorro_patricio.webp" alt="Gorro Patricio Estrella Playa - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -1818,16 +1651,13 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Patricio Estrella Playa por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Patricio Estrella Playa por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
 
         <!-- Producto 61: Gorro Ositos Cariñositos Arcoíris -->
-        <article class="product-gorro-card" data-category="amigos animados pink">
+        <article class="product-gorro-card catalog-item-collapsed" data-category="amigos animados pink">
           <div class="product-image-container">
             <span class="product-badge-corner">🌈 1 Disponible</span>
             <img src="assets/images/catalog/gorro_ositos_carinositos.webp" alt="Gorro Ositos Cariñositos Arcoíris - Estilo Molar Villahermosa" loading="lazy" width="300" height="260">
@@ -1842,13 +1672,26 @@
                 <span class="product-price-value">$150 MXN</span>
                 <span class="product-price-note">100% Algodón • Lavable</span>
               </div>
-              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Ositos Cariñositos Arcoíris por WhatsApp">
-                <span>Pedir</span>
-                <span>💬</span>
-              </button>
+              <button class="btn-whatsapp-order btn-order-gorro" type="button" aria-label="Pedir Gorro Ositos Cariñositos Arcoíris por WhatsApp"><span>Pedir</span><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></button>
             </div>
           </div>
         </article>
+      </div>
+
+      <!-- Barra de Acciones del Catálogo (Colapso / Expansión y Descarga PDF) -->
+      <div class="catalog-expand-actions-bar">
+        <button id="toggleCatalogBtn" class="btn-pill-dark btn-expand-catalog" type="button" aria-expanded="false">
+          <span class="btn-text">✨ Ver Catálogo Completo (61 Diseños Exclusivos)</span>
+          <span class="btn-icon">▾</span>
+        </button>
+        <a href="catalogo_gorros.pdf" download="Catalogo_Gorros_Estilo_Molar.pdf" class="btn-pill-white btn-download-catalog" title="Descargar Catálogo Completo en PDF">
+          <span>📄 Descargar Catálogo PDF (2.7 MB)</span>
+          <span class="arrow-icon-circle">↓</span>
+        </a>
+        <a href="https://wa.me/529934153041?text=Hola%20Dra.%20Dariana,%20me%20gustar%C3%ADa%20hacer%20un%20pedido%20de%20gorros%20quir%C3%BArgicos" target="_blank" rel="noopener noreferrer" class="btn-whatsapp-caps" aria-label="Pedir gorros por WhatsApp">
+          <svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg>
+          <span>Pedir por WhatsApp</span>
+        </a>
       </div>
 
       <!-- Banner de Descarga Oficial & Beneficios del Catálogo Estilo Molar -->
@@ -1905,12 +1748,14 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ==========================================================================
-         OUR SERVICES SECTION (4 TARJETAS VERTICALES - CALCA EXACTA)
+  <!-- ==========================================================================
+       OUR SERVICES SECTION (4 TARJETAS VERTICALES - CALCA EXACTA)
          ========================================================================== -->
     <section class="services-section-wrapper" id="servicios">
+    <div class="container">
       <div class="section-header-row">
         <div class="section-header-left">
           <span class="section-badge-pill">🦷 NUESTROS TRATAMIENTOS</span>
@@ -1994,12 +1839,14 @@
           </div>
         </article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ==========================================================================
-         PATIENT STORIES & VIDEO PROCEDURE (CONTENEDOR OSCURO)
+  <!-- ==========================================================================
+       PATIENT STORIES & VIDEO PROCEDURE (CONTENEDOR OSCURO)
          ========================================================================== -->
     <section class="dark-teal-section-wrapper" id="testimonios">
+          <div class="container">
       <!-- Encabezado con flechas de navegación -->
       <div class="section-header-row">
         <div class="section-header-left">
@@ -2018,84 +1865,72 @@
         </div>
       </div>
 
-      <!-- Tarjetas de Testimonios -->
+      <!-- Tarjetas de Testimonios Dinámicos con Avatares Reales -->
       <div class="stories-cards-carousel">
-        <!-- Testimonio 1 -->
+        <!-- Testimonio 1: Dra. Andrea Salgado -->
         <div class="story-review-card">
           <span class="story-quote-mark">“</span>
           <div class="story-client-header">
-            <div class="story-client-avatar-badge" style="background: var(--pastel-cyan);">AS</div>
+            <img src="assets/images/avatar_andrea_salgado.jpg" alt="Dra. Andrea Salgado" class="story-client-avatar-img" width="54" height="54">
             <div class="story-client-meta">
               <h4>Dra. Andrea Salgado</h4>
               <span>Médico Cirujano • Villahermosa</span>
+              <span class="review-verified-pill">✓ Paciente & Colega Verificada</span>
             </div>
           </div>
           <p class="story-quote-body">
-            "Los gorros de Estilo Molar tienen una tela fresca y resistente al calor de Tabasco. Además, me realicé una limpieza dental en su consultorio y la atención fue de primer nivel."
+            "Como médico aquí en Villahermosa, las jornadas en quirófano son pesadas con el calor. Los gorros de Estilo Molar son súper frescos, cómodos y no se despintan con las lavadas. Además me hice una profilaxis con Dariana y su técnica es cuidadosa y sin dolor."
           </p>
           <div class="story-stars-row">★★★★★</div>
         </div>
 
-        <!-- Testimonio 2 -->
+        <!-- Testimonio 2: Ing. Carlos Peralta -->
         <div class="story-review-card">
           <span class="story-quote-mark">“</span>
           <div class="story-client-header">
-            <div class="story-client-avatar-badge" style="background: var(--pastel-peach);">CP</div>
+            <img src="assets/images/avatar_carlos_peralta.jpg" alt="Ing. Carlos Peralta" class="story-client-avatar-img" width="54" height="54">
             <div class="story-client-meta">
               <h4>Ing. Carlos Peralta</h4>
               <span>Paciente de Resinas • Tabasco 2000</span>
+              <span class="review-verified-pill">✓ Paciente Verificado</span>
             </div>
           </div>
           <p class="story-quote-body">
-            "Estaba muy nervioso por un dolor en una muela. La doctora me atendió de urgencia con una gran calidez, no sentí ningún piquete con la anestesia. ¡Muy recomendada!"
+            "Le tenía pavor a los dentistas por malas experiencias de niño. Llegué con Dariana con un dolor insoportable de muela y me explicó todo con calma, no sentí ni el piquete de la anestesia. Mis resinas quedaron idénticas a mis dientes naturales. ¡Excelente atención!"
           </p>
           <div class="story-stars-row">★★★★★</div>
         </div>
 
-        <!-- Testimonio 3 -->
+        <!-- Testimonio 3: Lic. Valeria Gómez -->
         <div class="story-review-card">
           <span class="story-quote-mark">“</span>
           <div class="story-client-header">
-            <div class="story-client-avatar-badge" style="background: var(--pastel-pink);">VG</div>
+            <img src="assets/images/avatar_valeria_gomez.jpg" alt="Lic. Valeria Gómez" class="story-client-avatar-img" width="54" height="54">
             <div class="story-client-meta">
               <h4>Lic. Valeria Gómez</h4>
               <span>Paciente Blanqueamiento • Atasta</span>
+              <span class="review-verified-pill">✓ Paciente Verificada</span>
             </div>
           </div>
           <p class="story-quote-body">
-            "El blanqueamiento dental superó mis expectativas, mis dientes quedaron blancos y sin nada de sensibilidad. Su consultorio es súper higiénico y moderno."
+            "Me daba pena sonreír en fotos por manchas en el esmalte. Me hice el blanqueamiento con la Dra. Dariana y el resultado fue increíble, cero sensibilidad y súper rápido. El consultorio impecable y el trato de lo más humano."
           </p>
           <div class="story-stars-row">★★★★★</div>
         </div>
 
-        <!-- Testimonio 4 -->
+        <!-- Testimonio 4: Dr. Fernando Rovirosa -->
         <div class="story-review-card">
           <span class="story-quote-mark">“</span>
           <div class="story-client-header">
-            <div class="story-client-avatar-badge" style="background: var(--pastel-lime);">FR</div>
+            <img src="assets/images/avatar_fernando_rovirosa.jpg" alt="Dr. Fernando Rovirosa" class="story-client-avatar-img" width="54" height="54">
             <div class="story-client-meta">
               <h4>Dr. Fernando Rovirosa</h4>
               <span>Cirujano Maxilofacial • Hospital Tabasco</span>
+              <span class="review-verified-pill">✓ Colega Verificado</span>
             </div>
           </div>
           <p class="story-quote-body">
-            "Excelente ergonomía en los gorros quirúrgicos de Estilo Molar, soportan jornadas quirúrgicas de más de 6 horas sin acalorar. Y las referencias de sus pacientes en estética dental son impecables."
-          </p>
-          <div class="story-stars-row">★★★★★</div>
-        </div>
-
-        <!-- Testimonio 5 -->
-        <div class="story-review-card">
-          <span class="story-quote-mark">“</span>
-          <div class="story-client-header">
-            <div class="story-client-avatar-badge" style="background: #E8F4F7;">SP</div>
-            <div class="story-client-meta">
-              <h4>Mtra. Sofía Priego</h4>
-              <span>Docente & Odontopediatra • UJAT</span>
-            </div>
-          </div>
-          <p class="story-quote-body">
-            "Los niños quedan fascinados con los gorros de caricaturas en el consultorio, rompen la tensión de inmediato. La Dra. tiene una delicadeza inigualable para atender pacientes infantiles."
+            "Encargué un lote de gorros personalizados para todo el equipo quirúrgico y llegaron impecables. La confección y los elásticos son ergonómicos para cirugías largas. Dariana combina a la perfección su excelencia odontológica con su talento en diseño."
           </p>
           <div class="story-stars-row">★★★★★</div>
         </div>
@@ -2109,12 +1944,14 @@
           <span style="font-size: 0.85rem; color: #D1EAF0;">Haz clic para ver detalles del protocolo clínico en Villahermosa</span>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ==========================================================================
-         OUR EXPERTS / CONOCE A TU DOCTORA
+  <!-- ==========================================================================
+       OUR EXPERTS / CONOCE A TU DOCTORA
          ========================================================================== -->
     <section class="experts-section-wrapper" id="equipo">
+    <div class="container">
       <div class="section-header-row">
         <div class="section-header-left">
           <span class="section-badge-pill">🦷 CONOCE A TU ODONTÓLOGA</span>
@@ -2134,17 +1971,23 @@
 
       <!-- Grid de Especialistas & Procedimientos Clínicos Reales -->
       <div class="experts-cards-grid">
-        <!-- Tarjeta 1: Dariana Pamela Peregrino Cabrera (Foto Real Oficial) -->
+        <!-- Tarjeta 1: Dra. Dariana Pamela Peregrino Cabrera (Foto Real Oficial - Encuadre Perfeccionado) -->
         <article class="doctor-expert-card featured-doctor">
-          <img src="assets/images/dra_dariana_pamela_hero.jpg" alt="E.C.D. Dariana Pamela Peregrino Cabrera en bata médica" loading="lazy">
+          <div class="doctor-photo-wrap">
+            <img src="assets/images/dra_dariana_pamela_hero.jpg" alt="Dra. Dariana Pamela Peregrino Cabrera en bata médica" loading="lazy">
+          </div>
           <div class="doctor-overlay-card">
             <div class="doctor-meta-text">
-              <h3>E.C.D. Dariana Pamela Peregrino C.</h3>
-              <p>Pasante de Odontología & Fundadora Estilo Molar Caps</p>
+              <h3>Dra. Dariana Pamela Peregrino C.</h3>
+              <p>Cirujana Dentista & Fundadora Estilo Molar Caps</p>
             </div>
             <div class="doctor-social-pills">
-              <a href="https://www.instagram.com/e.c.d_darianap/" target="_blank" rel="noopener noreferrer" class="social-circle-pill" aria-label="Instagram Oficial @e.c.d_darianap">📸</a>
-              <a href="https://wa.me/529934153041?text=Hola%20Dariana,%20deseo%20agendar%20una%20cita%20dental" target="_blank" rel="noopener noreferrer" class="social-circle-pill" aria-label="WhatsApp Directo">💬</a>
+              <a href="https://www.instagram.com/e.c.d_darianap/" target="_blank" rel="noopener noreferrer" class="social-circle-pill ig-circle-btn" aria-label="Instagram de la Doctora @e.c.d_darianap" title="Instagram de la Doctora">
+                <svg class="svg-brand-icon svg-ig" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </a>
+              <a href="https://wa.me/529934153041?text=Hola%20Dra.%20Dariana,%20deseo%20agendar%20una%20cita%20dental" target="_blank" rel="noopener noreferrer" class="social-circle-pill wa-circle-btn" aria-label="WhatsApp Directo" title="WhatsApp Consultorio">
+                <svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg>
+              </a>
             </div>
           </div>
         </article>
@@ -2159,7 +2002,7 @@
             </div>
             <div class="doctor-social-pills">
               <span class="social-circle-pill" title="Precisión Quirúrgica">🔬</span>
-              <a href="https://wa.me/529934153041?text=Hola%20Dariana,%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20tus%20tratamientos" target="_blank" rel="noopener noreferrer" class="social-circle-pill" aria-label="Consultar Tratamiento">💬</a>
+              <a href="https://wa.me/529934153041?text=Hola%20Dra.%20Dariana,%20deseo%20una%20valoraci%C3%B3n%20dental" target="_blank" rel="noopener noreferrer" class="social-circle-pill wa-circle-btn" aria-label="WhatsApp Consultorio" title="Consultar por WhatsApp"><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></a>
             </div>
           </div>
         </article>
@@ -2174,17 +2017,19 @@
             </div>
             <div class="doctor-social-pills">
               <span class="social-circle-pill" title="Aislamiento Absoluto">🛡️</span>
-              <a href="https://wa.me/529934153041?text=Hola%20Dariana,%20deseo%20una%20valoraci%C3%B3n%20dental" target="_blank" rel="noopener noreferrer" class="social-circle-pill" aria-label="Consultar Cita">💬</a>
+              <a href="https://wa.me/529934153041?text=Hola%20Dra.%20Dariana,%20deseo%20una%20valoraci%C3%B3n%20dental" target="_blank" rel="noopener noreferrer" class="social-circle-pill wa-circle-btn" aria-label="WhatsApp Consultorio" title="Consultar por WhatsApp"><svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg></a>
             </div>
           </div>
         </article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ==========================================================================
-         BOOKING / CONTACT SECTION (CONTENEDOR AZUL OSCURO CON FORMULARIO)
+  <!-- ==========================================================================
+       BOOKING / CONTACT SECTION (CONTENEDOR AZUL OSCURO CON FORMULARIO)
          ========================================================================== -->
     <section class="dark-teal-section-wrapper" id="contacto">
+    <div class="container">
       <div class="section-header-row">
         <div class="section-header-left">
           <span class="section-badge-pill on-dark">🦷 AGENDA TU CITA</span>
@@ -2261,11 +2106,15 @@
               <textarea id="bookNotes" class="form-control-textarea" placeholder="Cuéntanos brevemente qué molestia tienes o qué modelo de gorro deseas..."></textarea>
             </div>
 
-            <div class="form-group-full" style="margin-top: 8px;">
-              <button type="submit" class="btn-pill-dark" style="width: 100%; justify-content: center; padding: 14px 20px;">
+            <div class="form-group-full" style="margin-top: 10px;">
+              <button type="submit" class="btn-submit-booking-modern" aria-label="Confirmar Cita por WhatsApp">
+                <svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg>
                 <span>Confirmar Cita por WhatsApp</span>
                 <span class="arrow-icon-circle">↗</span>
               </button>
+              <div class="booking-security-note">
+                <span>🔒 Tu solicitud se coordina de forma privada y directa con la Dra. Dariana Pamela.</span>
+              </div>
             </div>
           </form>
         </div>
@@ -2273,7 +2122,7 @@
         <!-- Columna Derecha: Foto de Dariana Pamela & Tarjetas de Contacto -->
         <div style="display: flex; flex-direction: column; gap: 20px;">
           <div class="booking-side-photo-card">
-            <img src="assets/images/dra_dariana_pamela_booking.jpg" alt="Dariana Pamela Peregrino Cabrera en bata médica profesional" loading="lazy">
+            <img src="assets/images/dra_dariana_pamela_booking.jpg" alt="Dra. Dariana Pamela Peregrino Cabrera en consultorio dental" loading="lazy">
           </div>
 
           <div class="booking-floating-contact-info">
@@ -2303,12 +2152,14 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ==========================================================================
-         FAQ SECTION (PREGUNTAS FRECUENTES)
+  <!-- ==========================================================================
+       FAQ SECTION (PREGUNTAS FRECUENTES)
          ========================================================================== -->
     <section class="faq-section-wrapper">
+          <div class="container">
       <div style="text-align: center; max-width: 600px; margin: 0 auto;">
         <span class="section-badge-pill">🦷 RESUELVE TUS DUDAS</span>
         <h2 class="section-main-title" style="color: var(--teal-darker); margin-top: 10px;">
@@ -2355,12 +2206,14 @@
           </div>
         </details>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ==========================================================================
-         FOOTER (CALCA EXACTA DEL DISEÑO)
+  <!-- ==========================================================================
+       FOOTER (CALCA EXACTA DEL DISEÑO)
          ========================================================================== -->
-    <footer class="site-footer-card">
+    <footer class="site-footer-wrapper">
+    <div class="container site-footer-card">
       <div class="footer-top-grid">
         <!-- Columna de Marca -->
         <div class="footer-brand-col">
@@ -2426,7 +2279,7 @@
       <!-- Fila Inferior Copyright & Back to Top -->
       <div class="footer-bottom-row">
         <span class="footer-copyright-text">
-          © 2026 E.C.D. Dariana Pamela Peregrino Cabrera • Estilo Molar Caps. Villahermosa, Tabasco. Todos los derechos reservados.
+          © 2026 Dra. Dariana Pamela Peregrino Cabrera • Cirujana Dentista & Estilo Molar Caps. Villahermosa, Tabasco. Todos los derechos reservados.
         </span>
 
         <button class="btn-back-to-top" type="button">
@@ -2434,13 +2287,13 @@
           <span>↑</span>
         </button>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-  </div>
 
   <!-- Botón Flotante de WhatsApp para Conversión Directa -->
-  <a href="https://wa.me/529934153041?text=Hola%20Dariana,%20vengo%20de%20tu%20p%C3%A1gina%20web,%20deseo%20m%C3%A1s%20informaci%C3%B3n" target="_blank" rel="noopener noreferrer" class="floating-whatsapp-trigger" aria-label="Contactar por WhatsApp">
-    <span style="font-size: 1.3rem;">💬</span>
+  <a href="https://wa.me/529934153041?text=Hola%20Dra.%20Dariana,%20vengo%20de%20su%20sitio%20web%20oficial,%20deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20citas%20o%20gorros" target="_blank" rel="noopener noreferrer" class="floating-whatsapp-trigger" aria-label="Contactar por WhatsApp">
+    <svg class="svg-brand-icon svg-wa" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.54 1.772.82 2.791.82 3.181 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.376 8.21c-.14.39-.714.737-1.02.779-.286.04-.64.066-2.062-.519-1.815-.747-2.986-2.586-3.076-2.707-.091-.121-.734-.977-.734-1.864 0-.887.464-1.325.629-1.506.166-.182.363-.227.484-.227.121 0 .242.001.348.006.111.005.26-.042.406.31.152.364.52 1.272.566 1.363.045.091.076.197.015.318-.061.121-.091.197-.182.303-.091.106-.192.237-.274.318-.091.091-.186.19-.08.372.106.182.471.776 1.011 1.257.695.619 1.28.811 1.462.902.182.091.288.076.394-.045.106-.121.454-.53.576-.712.121-.182.242-.152.409-.091.167.061 1.06.5 1.242.591.182.091.303.136.348.212.046.076.046.439-.094.829z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.982-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.167c-1.637 0-3.155-.467-4.444-1.274l-.319-.199-3.298.865.88-3.216-.219-.348A8.138 8.138 0 013.833 12c0-4.503 3.664-8.167 8.167-8.167 4.503 0 8.167 3.664 8.167 8.167 0 4.503-3.664 8.167-8.167 8.167z"/></svg>
     <span class="label-text">¡Agenda tu Cita!</span>
   </a>
 

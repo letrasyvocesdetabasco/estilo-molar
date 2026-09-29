@@ -42,6 +42,31 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* ==========================================================================
+     2.1 Toggle Catálogo Completo (61 Gorros)
+     ========================================================================== */
+  const toggleCatalogBtn = document.getElementById('toggleCatalogBtn');
+  const productsGorrosGrid = document.querySelector('.products-gorros-grid');
+
+  if (toggleCatalogBtn && productsGorrosGrid) {
+    toggleCatalogBtn.addEventListener('click', () => {
+      const isExpanded = productsGorrosGrid.classList.toggle('expanded');
+      const btnText = toggleCatalogBtn.querySelector('.btn-text');
+      const btnIcon = toggleCatalogBtn.querySelector('.btn-icon');
+      
+      toggleCatalogBtn.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
+
+      if (isExpanded) {
+        if (btnText) btnText.textContent = '▲ Mostrar Menos Modelos';
+        if (btnIcon) btnIcon.textContent = '▲';
+      } else {
+        if (btnText) btnText.textContent = '✨ Ver Catálogo Completo (61 Diseños Exclusivos)';
+        if (btnIcon) btnIcon.textContent = '▾';
+        productsGorrosGrid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  }
+
+  /* ==========================================================================
      2. Filtro de Gorros Quirúrgicos
      ========================================================================== */
   const filterTabs = document.querySelectorAll('.filter-tab-pill');
@@ -51,6 +76,18 @@ document.addEventListener('DOMContentLoaded', () => {
     tab.addEventListener('click', () => {
       filterTabs.forEach((t) => t.classList.remove('active'));
       tab.classList.add('active');
+
+      // Expandir automáticamente el catálogo al filtrar para mostrar todos los resultados
+      if (productsGorrosGrid && !productsGorrosGrid.classList.contains('expanded')) {
+        productsGorrosGrid.classList.add('expanded');
+        if (toggleCatalogBtn) {
+          toggleCatalogBtn.setAttribute('aria-expanded', 'true');
+          const btnText = toggleCatalogBtn.querySelector('.btn-text');
+          const btnIcon = toggleCatalogBtn.querySelector('.btn-icon');
+          if (btnText) btnText.textContent = '▲ Mostrar Menos Modelos';
+          if (btnIcon) btnIcon.textContent = '▲';
+        }
+      }
 
       const filterCategory = tab.getAttribute('data-filter');
 
@@ -77,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const title = card ? card.querySelector('.product-title-row h3')?.innerText : 'Gorro Quirúrgico';
       const price = card ? card.querySelector('.product-price-value')?.innerText : '$150 MXN';
 
-      const message = `👋 ¡Hola Dra. Dariana! Me interesa adquirir el gorro quirúrgico modelo *${title}* (${price}) del catálogo oficial de Estilo Molar en Villahermosa. ¿Tienes disponible para entrega o envío?`;
+      const message = `👋 ¡Hola Dra. Dariana! Me encantó el gorro quirúrgico modelo *${title}* (${price}) de su catálogo oficial en línea. ¿Tiene disponibilidad para entrega en Villahermosa o envío?`;
       const encodedMsg = encodeURIComponent(message);
       const whatsappUrl = `https://wa.me/${CLINIC_WHATSAPP}?text=${encodedMsg}`;
 
@@ -116,19 +153,19 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Generar mensaje estructurado para WhatsApp
+      // Generar mensaje estructurado y amigable para WhatsApp
       const appointmentMessage = 
-`🦷 *SOLICITUD DE CITA DENTAL - VILLAHERMOSA* 🦷
-----------------------------------
-👤 *Paciente:* ${name}
-📞 *Teléfono:* ${phone}
-📧 *Email:* ${email || 'No especificado'}
-🗓 *Fecha Deseada:* ${date}
-⏰ *Horario Preferido:* ${time}
-🩺 *Tratamiento / Motivo:* ${service}
-📝 *Comentarios / Síntomas:* ${notes || 'Primera valoración'}
-----------------------------------
-_Enviado desde el sitio web oficial de Estilo Molar_`;
+`✨ *SOLICITUD DE CITA DENTAL | DRA. DARIANA PAMELA* ✨
+¡Hola Dra. Dariana! 👋 Me gustaría agendar una consulta en su consultorio en Villahermosa:
+
+• 👤 *Paciente:* ${name}
+• 📱 *WhatsApp:* ${phone}
+• 🗓 *Fecha deseada:* ${date}
+• ⏰ *Horario:* ${time}
+• 🦷 *Tratamiento:* ${service}
+${notes ? `• 💬 *Motivo o notas:* ${notes}\n` : ''}
+📍 *Villahermosa, Tabasco*
+¡Quedo a la espera de su confirmación! Muchas gracias. 😊`;
 
       const whatsappUrl = `https://wa.me/${CLINIC_WHATSAPP}?text=${encodeURIComponent(appointmentMessage)}`;
 

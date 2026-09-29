@@ -71,11 +71,13 @@ html {
 
 body {
   min-height: 100vh;
-  padding: 30px 24px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: block;
+  overflow-x: hidden;
   line-height: 1.5;
+  background-color: #FFFFFF;
 }
 
 img {
@@ -102,16 +104,28 @@ button {
    ========================================================================== */
 .page-container {
   width: 100%;
-  max-width: 1380px;
-  background-color: var(--page-bg);
-  border-radius: var(--radius-canvas);
-  box-shadow: var(--shadow-canvas);
-  overflow: hidden;
-  position: relative;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
   display: flex;
   flex-direction: column;
-  padding: 24px;
-  gap: 28px;
+  gap: 0;
+}
+
+/* Full-width container pattern */
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 0 16px;
+  }
 }
 
 /* ==========================================================================
@@ -1615,6 +1629,7 @@ button {
 @media (min-width: 960px) {
   .booking-section-grid {
     grid-template-columns: 1.15fr 0.85fr;
+    align-items: start;
   }
 }
 
@@ -2755,4 +2770,428 @@ dialog::backdrop {
   .doctor-expert-card {
     height: 270px;
   }
+}
+
+
+/* ==========================================================================
+   ENHANCEMENTS: FULL-WIDTH SECTIONS, CRISP BRAND ICONS & MODERN POLISH
+   ========================================================================== */
+
+/* 1. Full-width Section Wrappers */
+.site-header-wrapper {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(5, 75, 87, 0.08);
+  box-shadow: 0 4px 20px rgba(5, 75, 87, 0.04);
+}
+
+.site-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+}
+
+.hero-section-wrapper {
+  width: 100%;
+  background: linear-gradient(180deg, #F0F7F7 0%, #E6F2F4 100%);
+  padding: 36px 0 60px;
+}
+
+.hero-bento-grid {
+  width: 100%;
+}
+
+.dark-teal-section-wrapper {
+  width: 100%;
+  background: #063941;
+  color: #FFFFFF;
+  padding: 76px 0;
+}
+
+.estilo-molar-feature-section {
+  width: 100%;
+  background: #FFFFFF;
+  padding: 72px 0;
+}
+
+.services-section-wrapper {
+  width: 100%;
+  background: #F4F8F9;
+  padding: 72px 0;
+  border-top: 1px solid rgba(5, 75, 87, 0.06);
+  border-bottom: 1px solid rgba(5, 75, 87, 0.06);
+}
+
+.experts-section-wrapper {
+  width: 100%;
+  background: #FFFFFF;
+  padding: 72px 0;
+}
+
+.faq-section-wrapper {
+  width: 100%;
+  background: #F8FBFC;
+  padding: 72px 0;
+  border-top: 1px solid rgba(5, 75, 87, 0.06);
+}
+
+.site-footer-wrapper {
+  width: 100%;
+  background: #032025;
+  color: #FFFFFF;
+  padding: 60px 0 28px;
+}
+
+.site-footer-card {
+  background: transparent;
+  padding: 0;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+/* 2. SVG Brand Icons */
+.svg-brand-icon {
+  display: inline-block;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+.svg-wa {
+  color: #FFFFFF;
+}
+
+.svg-ig {
+  color: #FFFFFF;
+}
+
+/* 3. Social Circle Buttons with Authentic Gradients */
+.social-circle-pill.wa-circle-btn,
+.wa-footer-btn {
+  background: #25D366 !important;
+  color: #FFFFFF !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3) !important;
+}
+
+.social-circle-pill.wa-circle-btn:hover,
+.wa-footer-btn:hover {
+  background: #1EBE5D !important;
+  transform: scale(1.12) !important;
+}
+
+.social-circle-pill.ig-circle-btn,
+.ig-footer-btn {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) !important;
+  color: #FFFFFF !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 0 4px 10px rgba(220, 39, 67, 0.3) !important;
+}
+
+.social-circle-pill.ig-circle-btn:hover,
+.ig-footer-btn:hover {
+  transform: scale(1.12) !important;
+  box-shadow: 0 6px 16px rgba(220, 39, 67, 0.45) !important;
+}
+
+/* Header CTA Button */
+.btn-header-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 4. Hero Mini-Card Modernization (Clear View of Dariana) */
+.mini-card-experience-modern {
+  background: #FFFFFF;
+  border-radius: var(--radius-card-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  border: 1px solid rgba(5, 75, 87, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition-smooth);
+}
+
+.mini-card-experience-modern:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.mini-card-photo-box {
+  position: relative;
+  width: 100%;
+  height: 185px;
+  overflow: hidden;
+  background: #EBF4F6;
+}
+
+.mini-card-photo-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  transition: transform 0.6s ease;
+}
+
+.mini-card-experience-modern:hover .mini-card-photo-box img {
+  transform: scale(1.05);
+}
+
+.mini-card-floating-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(14, 37, 45, 0.85);
+  backdrop-filter: blur(8px);
+  color: #FFFFFF;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mini-badge-caption-box {
+  padding: 12px 14px;
+  background: var(--teal-dark);
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+/* Avatar Circle Img */
+.avatar-circle-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.story-client-avatar-img-sm {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--pastel-peach);
+  flex-shrink: 0;
+}
+
+/* 5. Compact Gorros Catalog & Expand System */
+.catalog-item-collapsed {
+  display: none !important;
+}
+
+.products-gorros-grid.expanded .catalog-item-collapsed {
+  display: flex !important;
+  animation: fadeInCatalog 0.35s ease forwards;
+}
+
+@keyframes fadeInCatalog {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.catalog-expand-actions-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 36px;
+  flex-wrap: wrap;
+}
+
+.btn-expand-catalog {
+  background: var(--teal-darker);
+  color: #FFFFFF;
+  padding: 14px 26px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  box-shadow: 0 6px 20px rgba(5, 54, 64, 0.18);
+  border-radius: var(--radius-pill);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.btn-expand-catalog:hover {
+  background: var(--teal-accent-blue);
+  transform: translateY(-2px);
+}
+
+.btn-whatsapp-caps {
+  background: #25D366;
+  color: #FFFFFF;
+  font-weight: 700;
+  padding: 14px 22px;
+  border-radius: var(--radius-pill);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 6px 18px rgba(37, 211, 102, 0.3);
+  transition: var(--transition-smooth);
+}
+
+.btn-whatsapp-caps:hover {
+  background: #1EBE5D;
+  transform: translateY(-2px);
+}
+
+.btn-instagram-caps {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: #FFFFFF;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: var(--radius-pill);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.88rem;
+  box-shadow: 0 4px 15px rgba(220, 39, 67, 0.25);
+  transition: var(--transition-smooth);
+}
+
+.btn-instagram-caps:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(220, 39, 67, 0.4);
+}
+
+/* 6. Centered Services Number Tags & Images */
+.service-card-number-tag {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important;
+  font-size: 0.82rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.05em !important;
+  padding: 4px 12px !important;
+  border-radius: var(--radius-pill) !important;
+  background: rgba(255, 255, 255, 0.25) !important;
+  backdrop-filter: blur(8px) !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15) !important;
+  align-self: flex-start !important;
+  line-height: 1 !important;
+}
+
+.service-card-top-content {
+  gap: 12px !important;
+}
+
+.service-card-bg-img {
+  object-position: center center !important;
+}
+
+/* 7. Doctor Card 1 (Dariana) Uncropped Head */
+.doctor-photo-wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.doctor-expert-card.featured-doctor .doctor-photo-wrap img,
+.doctor-expert-card.featured-doctor img {
+  object-fit: cover;
+  object-position: center 8% !important;
+}
+
+/* 8. Testimonials Real Avatars & Verified Badges */
+.story-client-avatar-img {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--pastel-cyan);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  flex-shrink: 0;
+}
+
+.review-verified-pill {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #0E6D81;
+  background: #E8F5F8;
+  padding: 2px 8px;
+  border-radius: var(--radius-pill);
+  margin-top: 3px;
+  width: fit-content;
+}
+
+/* 9. Modern Aesthetic Booking Form */
+.booking-form-card {
+  background: #FFFFFF;
+  border-radius: var(--radius-card-lg);
+  padding: 34px 28px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.form-control-input,
+.form-control-select,
+.form-control-textarea {
+  width: 100%;
+  padding: 13px 16px;
+  border: 1.5px solid #D8E4E8;
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: 0.94rem;
+  color: var(--text-dark);
+  background-color: #F8FBFC;
+  transition: var(--transition-smooth);
+  outline: none;
+}
+
+.form-control-input:focus,
+.form-control-select:focus,
+.form-control-textarea:focus {
+  border-color: #0E6D81;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 0 4px rgba(14, 109, 129, 0.12);
+}
+
+.btn-submit-booking-modern {
+  width: 100%;
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  color: #FFFFFF;
+  font-size: 1.05rem;
+  font-weight: 700;
+  padding: 16px 24px;
+  border-radius: var(--radius-pill);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
+  transition: var(--transition-smooth);
+  cursor: pointer;
+  border: none;
+}
+
+.btn-submit-booking-modern:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.45);
+  background: linear-gradient(135deg, #20BA5A 0%, #0E7468 100%);
+}
+
+.booking-security-note {
+  text-align: center;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 10px;
 }
